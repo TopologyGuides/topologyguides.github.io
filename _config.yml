@@ -10,7 +10,7 @@ blog:
 
 # Layout configuration
   logo_path                  : "favicon.png" # path to logo file
-  search_path                : topologyguides.johnsonlm.com # "yourgitusername.github.io"
+  search_path                : beta.topologyguides.com # "yourgitusername.github.io"
                                # needed for searchbox in archive page
   hero_layout                : false # turn on hero layout for blog and posts
   hero_placeholder           : "assets/img/header.png" # placeholder for hero image

@@ -33,3 +33,5 @@ Using this type of transition is perfect for important bevel transitions and hig
 This last method is for sharp chamfered bevels. Using creases and single segment bevels, it’s easy to create very clean transition points. The important step here is to merge the extra vertices in step four to restore the edge flow.
 
 That concludes this brief intro to variable bevels! If this guide was useful to you, then please consider sharing it or contributing to the project’s [Patreon page](https://www.patreon.com/johnson).
+
+{% include patreon.html %}
