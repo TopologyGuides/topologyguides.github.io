@@ -39,5 +39,3 @@ Bevel the outer corners of the chamfered area a small amount to make sure the ed
 Add more holding edges to the outside to keep the shape contained, then add sub-surf if desired.
 
 That’s it!
-
-<iframe width="640" height="480" src="https://sketchfab.com/models/1332138975d94853b0dece54d817e27c/embed?autospin=0.2&amp;camera=0&amp;transparent=1&amp;ui_related=0" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
