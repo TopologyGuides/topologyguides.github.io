@@ -41,5 +41,3 @@ Add holding edges or mean creases to hold the shape, then apply sub-surf. At thi
 
 ![image](assets/img/153741336695_0.png)
 See the final result on Sketchfab:
-
-<iframe src="https://sketchfab.com/models/b0879ecb380d4f73b4ad557582c3e7f8/embed?autospin=0.2&amp;camera=0&amp;transparent=1&amp;ui_related=0" width="640" height="480" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
