@@ -21,6 +21,6 @@ For those curious, the site is built entirely using markdown on the Jekyll blogg
 
 The site previously was a Tumble blog and briefly moved to a Wordpress install before I realized Wordpress was horrific at being efficient and was not worth the cost investment.
 
-[The site's Github project page is here.](https://github.com/TopologyGuides)
+<iframe src="https://ghbtns.com/github-btn.html?user=topologyguides&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="230" height="30" title="GitHub"></iframe>
 
 </div>
