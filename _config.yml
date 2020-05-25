@@ -1,7 +1,7 @@
 # Base blog settings
 
                               # set to '' in case of hosting on GitHub
-url                          : 'http://topologyguides.johnsonlm.com' # the base hostname & protocol for your site
+url                          : 'http://beta.topologyguides.com/' # the base hostname & protocol for your site
                                   # `http://<username>.github.io` - for GitHub
 
 blog:
@@ -29,7 +29,7 @@ author:
   rss                       : true # generate RSS feed and show it's icon in header
   mail                      :  # change to your e-mail address
   twitter                   :
-  github                    : https://github.com/JohnsonLM/topologyguides
+  github                    : TopologyGuides/topologyguides.github.io
   youtube                   :
   stackoverflow             :
   disqus                    : topologyguides # your disqus site name

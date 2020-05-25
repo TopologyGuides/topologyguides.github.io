@@ -8,7 +8,6 @@ tags:
 - guide
 tumblr_url: https://topologyguides.com/post/124121567070/3-types-of-rounded-cylinder-caps
 ---
- ![](/tumblr_files/tumblr_nridtvLNEb1ub7tgwo1_1280.png)  
+ ![](/assets/img/124121567070.png)  
 
 3 types of rounded cylinder caps.&nbsp;
-

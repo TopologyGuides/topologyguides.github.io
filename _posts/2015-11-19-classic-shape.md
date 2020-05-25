@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A simple method of modeling a classic shape
+title: Modeling a Revolver Cylinder
 date: '2015-11-19T08:58:58-05:00'
 tags:
 - b3d
@@ -9,6 +9,6 @@ tags:
 - topology
 tumblr_url: https://topologyguides.com/post/133528602155/a-simple-method-of-modeling-a-classic-shape
 ---
- ![](/tumblr_files/tumblr_ny2euad8Zn1ub7tgwo1_1280.png)  
+![](/assets/img/133528602155.png)
 
 A simple method of modeling a classic shape.

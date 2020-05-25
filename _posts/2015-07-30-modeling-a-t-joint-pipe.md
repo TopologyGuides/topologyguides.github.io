@@ -1,6 +1,6 @@
 ---
 layout: post
-title: modeling a t joint pipe
+title: Modeling a T-joint Pipe
 date: '2015-07-30T11:09:20-04:00'
 tags:
 - tutorial
@@ -10,7 +10,6 @@ tags:
 - 3dsmax
 tumblr_url: https://topologyguides.com/post/125433745815/modeling-a-t-joint-pipe
 ---
- ![](/tumblr_files/tumblr_nsb3fk6kjt1ub7tgwo1_1280.png)  
+ ![](/assets/img/125433745815.png)  
 
 Modeling a t-joint pipe.
-

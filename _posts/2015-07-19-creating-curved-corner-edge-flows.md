@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating curved corner edge flows
+title: Creating Curved Corner Edge Flows
 date: '2015-07-19T17:49:27-04:00'
 tags:
 - 3d modelling
@@ -8,6 +8,6 @@ tags:
 - topology
 tumblr_url: https://topologyguides.com/post/124518292985/creating-curved-corner-edge-flows
 ---
- ![](/tumblr_files/tumblr_nrr8mfa7M91ub7tgwo1_1280.png)  
+ ![](/assets/img/124518292985.png)  
 
 Creating curved corner edge flows.

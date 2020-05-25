@@ -5,7 +5,7 @@ date: '2016-04-20T15:10:43-04:00'
 tags: []
 tumblr_url: https://topologyguides.com/post/143124861165/how-to-retopologize-3d-scans-into-low-poly-game
 ---
-![image]()/assets/img/143124861165_0.jpg)
+![image](/assets/img/143124861165_0.jpg)
 
 I recently had the honor of writing a tutorial for the Sketchfab Blog about retopologizing 3d scans. I thought this would relevant to this blog so I’ll share it with you.&nbsp;
 

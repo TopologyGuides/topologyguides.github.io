@@ -35,4 +35,4 @@ Start filling the faces in. Rearrange the varices to make sure the faces are eve
 
 After you’re done, check over the model to make sure you didn’t mess up other parts of the model while deleting or adding edge loops. Especially if you’re doing sub-d modeling.
 
-<figure class="tmblr-full" data-orig-height="414" data-orig-width="1985"><img src="https://66.media.tumblr.com/d3b3702f1d99fd607eff3239e342962c/tumblr_inline_o3jp014nHm1tydm58_540.png" data-orig-height="414" data-orig-width="1985"></figure>
+![](/assets/img/140479921825_0.png)
