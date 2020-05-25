@@ -45,7 +45,10 @@ Creasing, especially at high subdivision levels has almost the same effect as ho
 
 One benefit of non-destructive subdivision surfaces is that you can preview how the surfacing will look without finalizing it. This is an invaluable benefit of sub-d modeling that other modeling methods often lack.
 
-![](assets/img/165094485335_3.webm)
+<video autoplay="autoplay" loop="loop"a >
+  <source src="assets/img/165094485335_3.webm" type="video/webm">
+</video>
+
 Previewing how subdivisions will affect your topology is vital to making sure there are no distortions in your mesh. Because like I’ve said before, you never really know how it will be transformed by sub-d smoothing.
 
 ## Use high contrast Materials during Modeling
