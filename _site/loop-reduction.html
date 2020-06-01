@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Optimal Edge Loop Reduction Flows &#9642; Topology Guides</title>
+<!--
+<meta name="description" content="Subdivided Result Optimal Edge Loop Reduction Flows An essential skill of modeling is knowing how to properly reduce the number of edge loops from a high mesh density to a low density. This involves some tricky topology. So let’s have a look at how to best reduce the various flow types....">
+-->
+<meta name="description" content="Guides for 3d Artists">
+<meta name="keywords" content="blender, guide, 3dmodeling, tutorial, mesh flow, step down, edge loops">
+<link rel="canonical" href="http://beta.topologyguides.com//loop-reduction">
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Optimal Edge Loop Reduction Flows" />
+<meta name="twitter:description" content="Guides for 3d Artists" />
+<meta name="twitter:image" content="http://beta.topologyguides.com/" />
+<meta name="author" content="">
+<link rel="author" href="">
+<meta property="og:locale" content="">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Optimal Edge Loop Reduction Flows">
+<meta property="og:description" content="Guides for 3d Artists">
+<meta property="og:url" content="http://beta.topologyguides.com//loop-reduction">
+<meta property="og:site_name" content="Topology Guides">
+<link rel="stylesheet" href="/assets/vendor/normalize-css/normalize.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="shortcut icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,400italic,700,700italic, Lora:400,400italic">
+<style>
+    html {
+      font-family: "Oswald", "Lora", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    }
+</style>
+   <body>
+       <div class="wrapper" id="blep">
+          <header>
+   <div class="menu">
+     <div class="logo">
+        <a href="/">Topology Guides</a>
+        <br>
+       <h3 style="margin-top: 0em;">Guides for 3d Artists</h3>
+     </div>
+   </div>
+   <div class="social">
+     <div class="nav">
+       <ul>
+         <li><a href="/">home</a>
+         <li><a href="/about">about</a>
+         <li><a href="/encyclopedia">encyclopedia</a>
+         <li><a href="/archive">archive</a>
+       </ul>
+     </div>
+     <ul>
+       <li>
+            <a href="https://github.com/TopologyGuides/topologyguides.github.io" target="_blank" class="smaller">
+              <span class="icon-github"></span>
+            </a>
+       <li>
+            <a href="/feed.xml" target="_blank">
+                <span class="icon-rss_feed"></span>
+            </a>
+       <li>
+            <a href="#" onclick="switchTheme()" title="Switch theme?">
+              <span class="icon-invert_colors" id="theme-switcher"></span>
+            </a>
+     </ul>
+   </div>
+</header>
+<article class="post">
+ <div class="post-title-container
+  no-hero-margin
+  ">
+    <!--Post hero image source-->
+   <div class="heading-container ">
+     <h1>
+          Optimal Edge Loop Reduction Flows
+     </h1>
+     <div class="post-meta">
+        <span>01/08/2017</span>
+        <span>
+              <a href="/tag/blender">#blender</a>
+              <a href="/tag/guide">#guide</a>
+              <a href="/tag/3dmodeling">#3dmodeling</a>
+              <a href="/tag/tutorial">#tutorial</a>
+              <a href="/tag/mesh flow">#mesh flow</a>
+              <a href="/tag/step down">#step down</a>
+              <a href="/tag/edge loops">#edge loops</a>
+        </span>
+     </div>
+   </div>
+ </div>
+   <p><img src="/assets/img/163679954765_0.png" alt="image" /><br />
+ <img src="/assets/img/163679954765_1.png" alt="image" /><br />
+Subdivided Result
+
+<h2 id="optimal-edge-loop-reduction-flows"><strong><a href="http://topologyguides.com/2020/05/23/2017-08-01-loop-reduction.html">Optimal Edge Loop Reduction Flows</a></strong></h2>
+
+<p>An essential skill of modeling is knowing how to properly reduce the number of edge loops from a high mesh density to a low density. This involves some tricky topology. So let’s have a look at how to best reduce the various flow types.
+
+<h2 id="2-1-and-4-1">2-1 and 4-1</h2>
+
+<p>The 2-1 and 4-1 flows are the trickiest to handle. Most methods involve substantial distortion of topology and/or the addition of more loops to the left or right of the intersection. 
+
+<p>So, after experimenting with different forms, the results above seem to offer the least mesh distortion despite containing Tris and N-gons. 
+
+<p>I apologize to any quad purists out there for the lack of quads. ;)
+
+<h2 id="3-1-4-2-and-5-3">3-1, 4-2, and 5-3</h2>
+
+<p>The three of these flows are very standard flows that involve redirecting the edge loops back towards their origin. This trick is very effective. and maintains almost perfect topology in most situations. 
+
+<p>As you can see, the 4-2 and 5-3 flows follow the form of the 3-1 flow. With the only differing factor being the number of center loops. This shows just how adaptable this method of reduction can be. 
+
+<hr />
+
+<p>Hope this helps! if so, be sure to hit one of those share buttons below!
+
+<p>Also, if you’re interested in supporting the content here on Topology Guides, please consider making a small donation <a href="https://www.patreon.com/johnson">to my Patreon page</a> to help with the creation of new content!
+
+</article>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'topologyguides';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+<aside class="related">
+<h2>Related posts</h2>
+<ul class="related-posts">
+   <li>
+    <a href="/manipulating-edge-poles">
+        <span>Moving and Manipulating Edge Poles</span>
+        <small>02/07</small>
+    </a>
+   <li>
+    <a href="/artifacts">
+        <span>Dealing with Mesh Artifacts in Subdivision Modeling</span>
+        <small>07/09</small>
+    </a>
+   <li>
+    <a href="/creating-chamfered-cuts">
+        <span>Creating Chamfered Cuts on Corners</span>
+        <small>09/03</small>
+    </a>
+   <li>
+    <a href="/modeling-grip-ridges">
+        <span>Modeling Grip Ridges</span>
+        <small>27/11</small>
+    </a>
+</aside>
+            <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us10.list-manage.com","uuid":"377f8cb02163f375b3f03fcfb","lid":"ceb49c397a","uniqueMethods":true}) })</script>
+
+           <footer>
+    <span>Guides for 3d Artists</span>
+    <span>written by Johnson Martin</span>
+</footer>
+       </div>
+<script type="text/javascript" src="/assets/js/theme.js"></script>
+    
