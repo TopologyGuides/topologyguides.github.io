@@ -1,0 +1,23 @@
+I"&<div class="page">
+
+  <div class="page-title-container">
+  <div class="heading-container">
+    <h1>About Topology Guides</h1>
+    <span>
+</span>
+  </div>
+</div>
+
+  <h2 id="a-simple-site-to-teach-top-notch-3d-modeling">A simple site to teach top-notch 3d modeling</h2>
+
+  <p>Topology Guides was started in 2015 as a site to share 3d modeling tips and tricks to 3d artists around the world.</p>
+
+  <h2 id="how-is-the-site-built">How is the site built?</h2>
+  <p>For those curious, the site is built entirely using markdown on the Jekyll blogging platform and hosted in Github Pages. This means the site is completely static and also open-source under an MIT license.</p>
+
+  <p>The site previously was a Tumble blog and briefly moved to a Wordpress install before I realized Wordpress was horrific at being efficient and was not worth the cost investment.</p>
+
+  <iframe src="https://ghbtns.com/github-btn.html?user=topologyguides&amp;type=follow&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="230" height="30" title="GitHub"></iframe>
+
+</div>
+:ET

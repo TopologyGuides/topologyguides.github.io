@@ -1,9 +1,4 @@
----
-layout: null
-sitemap:
-  exclude: 'yes'
----
 User-agent: *
 Disallow:
 
-Sitemap: {{ site.url }}/sitemap.xml
+Sitemap: http://beta.topologyguides.com//sitemap.xml

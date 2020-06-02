@@ -1,0 +1,32 @@
+I"�<p>This time I’m going to show how to model a chamfered circle. I spent a fair bit of time on this one, trying to find a simple method for modeling the shape, and I think I found the simplest one. It’s not ideal (a few ngons), but the other methods I’ve found to be overly complex with too little payoff. Let me know if you have an even better method because I’d love to see it. 🙂</p>
+
+<p><img src="/assets/img/155917438770_0.png" alt="" /></p>
+
+<p><strong>1.</strong></p>
+
+<p>Begin by creating a circle with a low edge count, in order to give a chamfered look. Then add a loop between each edge for the next step.</p>
+
+<p><strong>2.</strong></p>
+
+<p>Next, pull the middle top vertices up in order to begin creating a rounded top.</p>
+
+<p><strong> 3.</strong></p>
+
+<p>Now bevel the center loop to complete the rounded look. Feel free to use as many segments as needed. Next, add a new circle above the mesh with the same edges count as the loops of the main mesh.</p>
+
+<p><strong>4.</strong></p>
+
+<p>The two loops can now be bridged by using the “bridge edge loops” tool in the edges menu (CTRL+E)</p>
+
+<p><strong>5.</strong></p>
+
+<p>Next, select the corners of the chamfered section and bevel them. Be sure not to bevel the top edges, so that the circular top maintains its shape.</p>
+
+<p><strong> 6.</strong></p>
+
+<p>The last step is to add holding edges to all the sharp corners and add sub-surf as desired.</p>
+
+<hr />
+
+<p>That’s it! See you in the next guide!</p>
+:ET

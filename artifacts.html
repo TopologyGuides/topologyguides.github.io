@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Dealing with Mesh Artifacts in Subdivision Modeling &#9642; Topology Guides</title>
+<!--
+<meta name="description" content="If you’ve ever tried to model a car or any other shiny object, you know how hard it is to get perfect reflections outside of using CAD programs. It’s tedious and virtually impossible to get 100% right. With that in mind, I thought I’d talk about modeling specifically for these...">
+-->
+<meta name="description" content="Guides for 3d Artists">
+<meta name="keywords" content="blender, topology, 3dmodeling, mesh, cgcookie">
+<link rel="canonical" href="http://beta.topologyguides.com//artifacts">
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Dealing with Mesh Artifacts in Subdivision Modeling" />
+<meta name="twitter:description" content="Guides for 3d Artists" />
+<meta name="twitter:image" content="http://beta.topologyguides.com/" />
+<meta name="author" content="">
+<link rel="author" href="">
+<meta property="og:locale" content="">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Dealing with Mesh Artifacts in Subdivision Modeling">
+<meta property="og:description" content="Guides for 3d Artists">
+<meta property="og:url" content="http://beta.topologyguides.com//artifacts">
+<meta property="og:site_name" content="Topology Guides">
+<link rel="stylesheet" href="/assets/vendor/normalize-css/normalize.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="shortcut icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,400italic,700,700italic, Lora:400,400italic">
+<style>
+    html {
+      font-family: "Oswald", "Lora", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    }
+</style>
+   <body>
+       <div class="wrapper" id="blep">
+          <header>
+   <div class="menu">
+     <div class="logo">
+        <a href="/">Topology Guides</a>
+        <br>
+       <h3 style="margin-top: 0em;">Guides for 3d Artists</h3>
+     </div>
+   </div>
+   <div class="social">
+     <div class="nav">
+       <ul>
+         <li><a href="/">home</a>
+         <li><a href="/about">about</a>
+         <li><a href="/encyclopedia">encyclopedia</a>
+         <li><a href="/archive">archive</a>
+       </ul>
+     </div>
+     <ul>
+       <li>
+            <a href="https://github.com/TopologyGuides/topologyguides.github.io" target="_blank" class="smaller">
+              <span class="icon-github"></span>
+            </a>
+       <li>
+            <a href="/feed.xml" target="_blank">
+                <span class="icon-rss_feed"></span>
+            </a>
+       <li>
+            <a href="#" onclick="switchTheme()" title="Switch theme?">
+              <span class="icon-invert_colors" id="theme-switcher"></span>
+            </a>
+     </ul>
+   </div>
+</header>
+<article class="post">
+ <div class="post-title-container
+  no-hero-margin
+  ">
+    <!--Post hero image source-->
+   <div class="heading-container ">
+     <h1>
+          Dealing with Mesh Artifacts in Subdivision Modeling
+     </h1>
+     <div class="post-meta">
+        <span>07/09/2017</span>
+        <span>
+              <a href="/tag/blender">#blender</a>
+              <a href="/tag/topology">#topology</a>
+              <a href="/tag/3dmodeling">#3dmodeling</a>
+              <a href="/tag/mesh">#mesh</a>
+              <a href="/tag/cgcookie">#cgcookie</a>
+        </span>
+     </div>
+   </div>
+ </div>
+   <p><img src="assets/img/165094485335_0.png" alt="" /><br />
+If you’ve ever tried to model a car or any other shiny object, you know how hard it is to get perfect reflections outside of using CAD programs. It’s tedious and virtually impossible to get 100% right.
+
+<p>With that in mind, I thought I’d talk about modeling specifically for these types of surfaces and the best ways to make it as painless as possible. Regularly used subdivision modeling methods rarely have the level of precision needed to make these kinds of surfaces, so I’ll be covering how “hack” sub-d modeling to best apply A-class surfacing ideals to the practical methods of subdivision modeling.ideals to the practical methods of subdivision modeling.
+
+<h2 id="evenly-and-sparsely-place-loops">Evenly and Sparsely Place Loops</h2>
+
+<p>Even spacing, while often unavoidable without adding useless edge loops, is a goal worth pursuing. Even spacing ensures curvatures stay correct by not introducing any irregular areas that might produce artifacts.
+
+<p>Because of the way subdivision surfaces smooth and subdivide, even adding an extra edge loop that “seems” to follow the surface of your model can cause minute distortions to reflections if placed incorrectly. This is why it’s best to keep the mesh as minimal as possible, for as long as possible. Keeping the mesh simple so you can understand what your topology is doing.
+
+<h2 id="minimize-high-density-edge-poles">Minimize High-Density Edge Poles</h2>
+
+<p>Edges poles are well known for creating mesh artifacts and distortions. But they are often unavoidable in certain areas without sacrificing another part of the model. That’s why it’s best to move poles to areas of less importance or curvature to make them less noticeable, rather than detrimentally removing them. Remove any unneeded poles if possible, but fall back to moving them if you can’t remove them.
+
+<p>A big request has been for a post covering moving poles, so I’ll hopefully be working on a full guide covering this soon.
+
+<h2 id="make-curvature-contradictions-after-finalization">Make Curvature Contradictions After Finalization</h2>
+
+<p>Curvature contradictions, meaning things like door handles on a car, or buttons on a control panel can cause major problems with topology and reflections. The main problem is that these contradictions can almost never be isolated without either large amounts of holding edges or creasing with very high mesh density.
+
+<p><img src="assets/img/165094485335_1.png" alt="" />
+To solve this problem, it’s best to add contradictions after one or two levels of subsurface smoothing have been applied. This way, the curvature is finalized before it can be altered negatively by any additional edits.
+
+<h2 id="dont-use-holding-edges-when-possible">Don’t use Holding Edges when Possible</h2>
+
+<p>While holding edges are a great thing, they almost always cause distortion on some part of a model by adding edges along the entire length of the area the loop runs.  The alternative is to use creasing when possible.
+
+<p><img src="assets/img/165094485335_2.png" alt="" />
+Creasing, especially at high subdivision levels has almost the same effect as holding edges and can create topology that is much cleaner and easier to manipulate because it uses the extra subdivision of sub-surf.
+
+<h2 id="non-destructive-sub-surface">Non-Destructive Sub-Surface</h2>
+
+<p>One benefit of non-destructive subdivision surfaces is that you can preview how the surfacing will look without finalizing it. This is an invaluable benefit of sub-d modeling that other modeling methods often lack.
+
+<video autoplay="" loop="">
+  <source src="assets/img/165094485335_3.webm" type="video/webm" />
+</video>
+
+<p>Previewing how subdivisions will affect your topology is vital to making sure there are no distortions in your mesh. Because like I’ve said before, you never really know how it will be transformed by sub-d smoothing.
+
+<h2 id="use-high-contrast-materials-during-modeling">Use high contrast Materials during Modeling</h2>
+
+<p>One of the main difficulties in creating perfect reflections is previewing those reflections inside modeling apps. The default Matcaps built into 3d viewports are too low contrast to notice minute imperfections. That’s why using high contrast Matcaps or patterned reflection maps is a good idea for noticing things one normally wouldn’t.
+
+<p><img src="assets/img/165094485335_4.png" alt="" />
+Depending on your software of choice, you might have a Matcap viewer available or some other way to change the viewport material. If all else fails, a fallback is to render a preview of your mesh with a checkered map set as your environment texture.
+
+<p>That’s all! I hope this gave you some helpful tips for reducing mesh artifacts. But before I conclude, I want to thank CGcookie for graciously sponsoring this post. CGcookie has some fantastic modeling coursework that’s defiantly worth checking for both beginners and advanced artists.
+
+<p>So if you’re interested, check them out by clicking the banner below. :)
+<a href="https://cgcookie.com/learn-blender"><figure class="tmblr-full" data-orig-height="291" data-orig-width="1496"><img src="assets/img/165094485335_5.png" alt="image" /></figure></a>
+
+</article>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'topologyguides';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+<aside class="related">
+<h2>Related posts</h2>
+<ul class="related-posts">
+   <li>
+    <a href="/bevel-width-transitions">
+        <span>Modeling Bevel Width Transitions</span>
+        <small>14/05</small>
+    </a>
+   <li>
+    <a href="/manipulating-edge-poles">
+        <span>Moving and Manipulating Edge Poles</span>
+        <small>02/07</small>
+    </a>
+   <li>
+    <a href="/loop-reduction">
+        <span>Optimal Edge Loop Reduction Flows</span>
+        <small>01/08</small>
+    </a>
+   <li>
+    <a href="/decals">
+        <span>Creating Seamless Decal Meshes</span>
+        <small>17/07</small>
+    </a>
+</aside>
+            <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us10.list-manage.com","uuid":"377f8cb02163f375b3f03fcfb","lid":"ceb49c397a","uniqueMethods":true}) })</script>
+
+           <footer>
+    <span>Guides for 3d Artists</span>
+    <span>written by Johnson Martin</span>
+</footer>
+       </div>
+<script type="text/javascript" src="/assets/js/theme.js"></script>
+    

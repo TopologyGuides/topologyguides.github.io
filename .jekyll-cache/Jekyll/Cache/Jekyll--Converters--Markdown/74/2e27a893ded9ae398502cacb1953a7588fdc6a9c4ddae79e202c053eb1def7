@@ -1,0 +1,31 @@
+I"�<p>This shape is pretty simple. but a useful one if your modeling mechanical or sci-fi things with grips or ridges. So let’s get to it!</p>
+
+<h2 id="1">1.</h2>
+
+<p>Start by modeling the curved edge you need to incorporate the ridges into. I recommend modeling separate to your main model so that you can tile it later and then add it back in.</p>
+
+<h2 id="2">2.</h2>
+
+<p>Add two loops to define the inset and outset parts. If you want the inset and outset ridges to be the same width, then make sure the middle section is the same width as the two outer sections combined.</p>
+
+<h2 id="3">3.</h2>
+
+<p>Cut out the area you’d like to be inset.</p>
+
+<h2 id="4">4.</h2>
+
+<p>Add a quad to the first four vertices along what will be the wall of the inset. Make sure to model this quad to be properly aligned how you</p>
+
+<p>like it, as the rest of the inset will be based upon this quad.</p>
+
+<h2 id="5">5.</h2>
+
+<p>Fill in the rest of the inset using the fill tool (F key), or using the <a href="http://lesterbanks.com/2013/01/extending-blenders-modeling-capabilities-with-the-f2-addon-for-blender/">F2 add-on</a> for Blender to make it even quicker.</p>
+
+<h2 id="6">6.</h2>
+
+<p>Add holding edges or mean creases to hold the shape, then apply sub-surf. At this point, you can easily tile the ridges using an array and reintegrate it into your mesh.</p>
+
+<p><img src="assets/img/153741336695_0.png" alt="image" />
+See the final result on Sketchfab:</p>
+:ET

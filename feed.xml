@@ -1,32 +1,579 @@
----
-layout: null
-sitemap:
-  exclude: 'yes'
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.blog.title | xml_escape }}</title>
-    <description>{{ site.blog.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>Topology Guides</title>
+    <description>Guides for 3d Artists</description>
+    <link>http://beta.topologyguides.com//</link>
+    <atom:link href="http://beta.topologyguides.com//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 01 Jun 2020 20:18:19 -0400</pubDate>
+    <lastBuildDate>Mon, 01 Jun 2020 20:18:19 -0400</lastBuildDate>
+    <generator>Jekyll v4.0.1</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>Modeling Bevel Width Transitions</title>
+        <description>&lt;p&gt;For some models, creating bevels is a simple as adding a bevel modifer. But for other models, more complex methods are needed. One of these methods is creating transitions between two bevel widths. Be it a car dashboard or a piece of furniture, bevel transitions are everywhere. This short guide will show you the most optimal ways to create transitions between bevel widths.&lt;/p&gt;
+
+&lt;h2 id=&quot;method-1---quick--dirty&quot;&gt;Method #1 - Quick &amp;amp; Dirty&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/618124624591536128_0.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;First, the quick and dirty method. If you’re in a pinch or if you’re modeling something that’s unlikely to be viewed close up, this is the method to use. This method involves using edge ceases to sharpen at variable levels. In this example, the sharp edge has a crease of 1.00 and the wider bevel has a crease of 0.00. To adjust the crease of an edge in Blender, use SHIFT-E.&lt;/p&gt;
+
+&lt;h2 id=&quot;method-2---smooth-bevels&quot;&gt;Method #2 - Smooth Bevels&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/618124624591536128_1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This method is a bit more complex and involves using the bevel tool (CTRL-B) to separately bevel each bevel width then combining the two bevels by cleaning up the merge point in step three. This method also using holding edges instead of edge creasing to have more control over the bevel profile.&lt;/p&gt;
+
+&lt;p&gt;Using this type of transition is perfect for important bevel transitions and high-poly modeling where model density is less restricted.&lt;/p&gt;
+
+&lt;h2 id=&quot;method-3---sharp-bevels&quot;&gt;Method #3 - Sharp Bevels&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/618124624591536128_2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This last method is for sharp chamfered bevels. Using creases and single segment bevels, it’s easy to create very clean transition points. The important step here is to merge the extra vertices in step four to restore the edge flow.&lt;/p&gt;
+
+&lt;p&gt;That concludes this brief intro to variable bevels! If this guide was useful to you, then please consider sharing it or contributing to the project’s &lt;a href=&quot;https://www.patreon.com/johnson&quot;&gt;Patreon page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.patreon.com/bePatron?u=4389823&quot; data-patreon-widget-type=&quot;become-patron-button&quot;&gt;Become a Patron!&lt;/a&gt;&lt;script async=&quot;&quot; src=&quot;https://c6.patreon.com/becomePatronButton.bundle.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 14 May 2020 16:52:58 -0400</pubDate>
+        <link>http://beta.topologyguides.com//bevel-width-transitions</link>
+        <guid isPermaLink="true">http://beta.topologyguides.com//bevel-width-transitions</guid>
+        
+        <category>3d modeling</category>
+        
+        <category>model</category>
+        
+        <category>topology</category>
+        
+        <category>3d</category>
+        
+        <category>blender</category>
+        
+        <category>b3d</category>
+        
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Moving and Manipulating Edge Poles</title>
+        <description>&lt;p&gt;Let’s talk about Edge poles, those famously aggravating little points on a mesh that cause so many headaches for 3d artists around the world. Why are they so terrible? What can we do about them? And when are they actually good to use?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/175483457845_0.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Edge poles are generally considered to vertices with more or less than 4 connecting vertices. On a polygon mesh, this means vertices with either 3 connecting edges or 5 or more connecting edges. Poles most commonly form when triangles or n-gons appearing in models, hence why such polygon types are generally avoided in 3d modeling. Triangulated meshes (such as game models, or photogrammetry models) are most notably known for consisting almost entirely of edge poles with very few 4-edge vertices, the same applies to meshes with large numbers of n-gons.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-problem-of-poles&quot;&gt;The Problem of Poles&lt;/h2&gt;
+
+&lt;p&gt;So you might be wondering, why do edge poles get such a bad wrap? The primary reason is that an edge pole creates pinching around its perimeter when subdivisions or smoothing is applied. This is why a cylinder with a triangle cap looks so odd when applying subdivision surface smoothing. The example below shows why this can be a problem on curved surfaces. The cross-section view shows that the corner that contains a pole will yield an uneven surface when subdivisions are applied.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/175483457845_1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Despite the pinching created by poles, they are an important part of modeling and a necessary component for many modeling techniques and shapes. So this the rest of this post will attempt to explain a bit more about poles and how to use them effectively.&lt;/p&gt;
+
+&lt;h2 id=&quot;e-poles&quot;&gt;E-poles&lt;/h2&gt;
+
+&lt;p&gt;E-poles are the most common pole type and consist of five edges intersecting at a single vertex. E-poles are most notorious for appearing when extruding faces on a mesh and for forming unwanted flat “corners” within the topology when edge loops meet or turn.  E-poles are also what form concave corners in hard surface models.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/175483457845_2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;n-poles&quot;&gt;N-poles&lt;/h2&gt;
+
+&lt;p&gt;N-poles are vertices that consist of three intersecting edges. This type of pole is far less common, but often appearing around poles or inset parts of a mesh. In organic modeling, this pole is often known as the “nose” pole, since N-poles are often necessary for modeling the base of the nose. N-poles are also what form the corner of a cube or most other convex corners.&lt;/p&gt;
+
+&lt;h2 id=&quot;other-pole-types&quot;&gt;Other Pole Types&lt;/h2&gt;
+
+&lt;p&gt;Poles with six or more edges are generally considered to be bad practice and almost never show up in good topology. Again, on flat surfaces, 6+ edge poles can be acceptable if absolutely needed, but this is a rare case.&lt;/p&gt;
+
+&lt;h2 id=&quot;when-are-poles-ok&quot;&gt;When are Poles Ok?&lt;/h2&gt;
+
+&lt;p&gt;You’ve probably come to realize that poles are inevitable, and required for proper topology. But when exactly do we know when a pole should or shouldn’t be where it is? It all comes down to curvature. If a pole is changing the curvature of the surface, then it should be removed or eliminated. This usually happens on corners or any other areas of extreme curvature. Of flat surfaces, less visible areas, or areas with a slight curvature like a cheek of a face are areas where poles are least destructive and are where you should try to place or move poles to.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/175483457845_3.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;moving-poles-the-great-compromise&quot;&gt;Moving Poles: The Great Compromise&lt;/h2&gt;
+
+&lt;p&gt;One of the most requested topics I’ve received is how to move poles. And for good reason, poles can be very difficult to move without modifying topology in an adverse way. In almost every circumstance model density must be changed to accommodate a change in pole locations, causing the topology to quickly become very sloppy if multiple edges need to be moved. This is why the best advice for moving poles is to not move them wherever possible by planning your pole locations is advance. It’s pretty easy to judge where a pole will form by looking at the major flows of a surface and where they intersect. That intersection is where a pole will appear. Luckily, it’s up to you where that intersection happens.&lt;/p&gt;
+
+&lt;p&gt;But, in the case that you do end up with a pole that needs to be moved, there are a number of options for moving poles depending on your needs. Every situation requires a slightly different approach, however, there are some general techniques for 3 and 5-edge poles that can be a good basis for moving a pole. Something to remember, whenever a pole is moved, one edge loop must be removed in the direction the pole is being moved, while another is subtracted from wherever the pole came from. The reason for this is that the edge loops must be redirected around the new location of the pole. Otherwise, an n-gon will appear.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/175483457845_4.png&quot; alt=&quot;image&quot; /&gt;
+ &lt;img src=&quot;assets/img/175483457845_5.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;That’s all! I hope this short primer on edge poles has given you a better understanding of how to use them effectively. If this guide was useful to you, then please consider sharing it or contributing to the project’s &lt;a href=&quot;https://www.patreon.com/johnson&quot;&gt;Patreon page&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 02 Jul 2018 17:08:42 -0400</pubDate>
+        <link>http://beta.topologyguides.com//manipulating-edge-poles</link>
+        <guid isPermaLink="true">http://beta.topologyguides.com//manipulating-edge-poles</guid>
+        
+        <category>blender</category>
+        
+        <category>b3d</category>
+        
+        <category>topology</category>
+        
+        <category>3D Modelling</category>
+        
+        <category>edge loops</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Dealing with Mesh Artifacts in Subdivision Modeling</title>
+        <description>&lt;p&gt;&lt;img src=&quot;assets/img/165094485335_0.png&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+If you’ve ever tried to model a car or any other shiny object, you know how hard it is to get perfect reflections outside of using CAD programs. It’s tedious and virtually impossible to get 100% right.&lt;/p&gt;
+
+&lt;p&gt;With that in mind, I thought I’d talk about modeling specifically for these types of surfaces and the best ways to make it as painless as possible. Regularly used subdivision modeling methods rarely have the level of precision needed to make these kinds of surfaces, so I’ll be covering how “hack” sub-d modeling to best apply A-class surfacing ideals to the practical methods of subdivision modeling.ideals to the practical methods of subdivision modeling.&lt;/p&gt;
+
+&lt;h2 id=&quot;evenly-and-sparsely-place-loops&quot;&gt;Evenly and Sparsely Place Loops&lt;/h2&gt;
+
+&lt;p&gt;Even spacing, while often unavoidable without adding useless edge loops, is a goal worth pursuing. Even spacing ensures curvatures stay correct by not introducing any irregular areas that might produce artifacts.&lt;/p&gt;
+
+&lt;p&gt;Because of the way subdivision surfaces smooth and subdivide, even adding an extra edge loop that “seems” to follow the surface of your model can cause minute distortions to reflections if placed incorrectly. This is why it’s best to keep the mesh as minimal as possible, for as long as possible. Keeping the mesh simple so you can understand what your topology is doing.&lt;/p&gt;
+
+&lt;h2 id=&quot;minimize-high-density-edge-poles&quot;&gt;Minimize High-Density Edge Poles&lt;/h2&gt;
+
+&lt;p&gt;Edges poles are well known for creating mesh artifacts and distortions. But they are often unavoidable in certain areas without sacrificing another part of the model. That’s why it’s best to move poles to areas of less importance or curvature to make them less noticeable, rather than detrimentally removing them. Remove any unneeded poles if possible, but fall back to moving them if you can’t remove them.&lt;/p&gt;
+
+&lt;p&gt;A big request has been for a post covering moving poles, so I’ll hopefully be working on a full guide covering this soon.&lt;/p&gt;
+
+&lt;h2 id=&quot;make-curvature-contradictions-after-finalization&quot;&gt;Make Curvature Contradictions After Finalization&lt;/h2&gt;
+
+&lt;p&gt;Curvature contradictions, meaning things like door handles on a car, or buttons on a control panel can cause major problems with topology and reflections. The main problem is that these contradictions can almost never be isolated without either large amounts of holding edges or creasing with very high mesh density.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/165094485335_1.png&quot; alt=&quot;&quot; /&gt;
+To solve this problem, it’s best to add contradictions after one or two levels of subsurface smoothing have been applied. This way, the curvature is finalized before it can be altered negatively by any additional edits.&lt;/p&gt;
+
+&lt;h2 id=&quot;dont-use-holding-edges-when-possible&quot;&gt;Don’t use Holding Edges when Possible&lt;/h2&gt;
+
+&lt;p&gt;While holding edges are a great thing, they almost always cause distortion on some part of a model by adding edges along the entire length of the area the loop runs.  The alternative is to use creasing when possible.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/165094485335_2.png&quot; alt=&quot;&quot; /&gt;
+Creasing, especially at high subdivision levels has almost the same effect as holding edges and can create topology that is much cleaner and easier to manipulate because it uses the extra subdivision of sub-surf.&lt;/p&gt;
+
+&lt;h2 id=&quot;non-destructive-sub-surface&quot;&gt;Non-Destructive Sub-Surface&lt;/h2&gt;
+
+&lt;p&gt;One benefit of non-destructive subdivision surfaces is that you can preview how the surfacing will look without finalizing it. This is an invaluable benefit of sub-d modeling that other modeling methods often lack.&lt;/p&gt;
+
+&lt;video autoplay=&quot;&quot; loop=&quot;&quot;&gt;
+  &lt;source src=&quot;assets/img/165094485335_3.webm&quot; type=&quot;video/webm&quot; /&gt;
+&lt;/video&gt;
+
+&lt;p&gt;Previewing how subdivisions will affect your topology is vital to making sure there are no distortions in your mesh. Because like I’ve said before, you never really know how it will be transformed by sub-d smoothing.&lt;/p&gt;
+
+&lt;h2 id=&quot;use-high-contrast-materials-during-modeling&quot;&gt;Use high contrast Materials during Modeling&lt;/h2&gt;
+
+&lt;p&gt;One of the main difficulties in creating perfect reflections is previewing those reflections inside modeling apps. The default Matcaps built into 3d viewports are too low contrast to notice minute imperfections. That’s why using high contrast Matcaps or patterned reflection maps is a good idea for noticing things one normally wouldn’t.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/165094485335_4.png&quot; alt=&quot;&quot; /&gt;
+Depending on your software of choice, you might have a Matcap viewer available or some other way to change the viewport material. If all else fails, a fallback is to render a preview of your mesh with a checkered map set as your environment texture.&lt;/p&gt;
+
+&lt;p&gt;That’s all! I hope this gave you some helpful tips for reducing mesh artifacts. But before I conclude, I want to thank CGcookie for graciously sponsoring this post. CGcookie has some fantastic modeling coursework that’s defiantly worth checking for both beginners and advanced artists.&lt;/p&gt;
+
+&lt;p&gt;So if you’re interested, check them out by clicking the banner below. :)
+&lt;a href=&quot;https://cgcookie.com/learn-blender&quot;&gt;&lt;figure class=&quot;tmblr-full&quot; data-orig-height=&quot;291&quot; data-orig-width=&quot;1496&quot;&gt;&lt;img src=&quot;assets/img/165094485335_5.png&quot; alt=&quot;image&quot; /&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 07 Sep 2017 18:31:31 -0400</pubDate>
+        <link>http://beta.topologyguides.com//artifacts</link>
+        <guid isPermaLink="true">http://beta.topologyguides.com//artifacts</guid>
+        
+        <category>blender</category>
+        
+        <category>topology</category>
+        
+        <category>3dmodeling</category>
+        
+        <category>mesh</category>
+        
+        <category>cgcookie</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Optimal Edge Loop Reduction Flows</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/img/163679954765_0.png&quot; alt=&quot;image&quot; /&gt;&lt;br /&gt;
+ &lt;img src=&quot;/assets/img/163679954765_1.png&quot; alt=&quot;image&quot; /&gt;&lt;br /&gt;
+Subdivided Result&lt;/p&gt;
+
+&lt;h2 id=&quot;optimal-edge-loop-reduction-flows&quot;&gt;&lt;strong&gt;&lt;a href=&quot;http://topologyguides.com/2020/05/23/2017-08-01-loop-reduction.html&quot;&gt;Optimal Edge Loop Reduction Flows&lt;/a&gt;&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;An essential skill of modeling is knowing how to properly reduce the number of edge loops from a high mesh density to a low density. This involves some tricky topology. So let’s have a look at how to best reduce the various flow types.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-1-and-4-1&quot;&gt;2-1 and 4-1&lt;/h2&gt;
+
+&lt;p&gt;The 2-1 and 4-1 flows are the trickiest to handle. Most methods involve substantial distortion of topology and/or the addition of more loops to the left or right of the intersection. &lt;/p&gt;
+
+&lt;p&gt;So, after experimenting with different forms, the results above seem to offer the least mesh distortion despite containing Tris and N-gons. &lt;/p&gt;
+
+&lt;p&gt;I apologize to any quad purists out there for the lack of quads. ;)&lt;/p&gt;
+
+&lt;h2 id=&quot;3-1-4-2-and-5-3&quot;&gt;3-1, 4-2, and 5-3&lt;/h2&gt;
+
+&lt;p&gt;The three of these flows are very standard flows that involve redirecting the edge loops back towards their origin. This trick is very effective. and maintains almost perfect topology in most situations. &lt;/p&gt;
+
+&lt;p&gt;As you can see, the 4-2 and 5-3 flows follow the form of the 3-1 flow. With the only differing factor being the number of center loops. This shows just how adaptable this method of reduction can be. &lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Hope this helps! if so, be sure to hit one of those share buttons below!&lt;/p&gt;
+
+&lt;p&gt;Also, if you’re interested in supporting the content here on Topology Guides, please consider making a small donation &lt;a href=&quot;https://www.patreon.com/johnson&quot;&gt;to my Patreon page&lt;/a&gt; to help with the creation of new content!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 01 Aug 2017 12:05:18 -0400</pubDate>
+        <link>http://beta.topologyguides.com//loop-reduction</link>
+        <guid isPermaLink="true">http://beta.topologyguides.com//loop-reduction</guid>
+        
+        <category>blender</category>
+        
+        <category>guide</category>
+        
+        <category>3dmodeling</category>
+        
+        <category>tutorial</category>
+        
+        <category>mesh flow</category>
+        
+        <category>step down</category>
+        
+        <category>edge loops</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Creating Seamless Decal Meshes</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/img/163096515095.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-seamless-decal-meshes&quot;&gt;&lt;strong&gt;&lt;a href=&quot;http://topologyguides.com/2020/05/23/2017-07-17-decals.html&quot;&gt;Creating Seamless Decal Meshes&lt;/a&gt;&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;I’ve talked quite a bit here on Topology Guides about integrating shapes into meshes. But until this point, I’ve overlooked a surprisingly adequate workaround to traditional modeling practices for integrating shapes onto a surface.&lt;/p&gt;
+
+&lt;p&gt;This workaround is the process of using “decal” meshes that hover over the surface of a primary mesh, yet seem to be fully integrated once shaded. The method I’m about to show you works mainly for protruding convex parts of an object. Such as a door handle or a button on a workstation.&lt;/p&gt;
+
+&lt;p&gt;For this process, all you need is the “decal” object you want to integrate, and the primary “surface” mesh.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; For smaller or concave decals, I highly recommend checking out &lt;a href=&quot;https://www.blendermarket.com/products/DECALmachine&quot;&gt;DECALmachine&lt;/a&gt;. It’s a fantastic add-on that’s been spreading like wildfire in the Blender community the past few months.&lt;/p&gt;
+
+&lt;h2 id=&quot;start-simple&quot;&gt;Start Simple&lt;/h2&gt;
+
+&lt;p&gt;In addition to the decal and surface we’re using, we’ll also need a 2d lattice roughly in the shape of the bottom of the decal. Along with that, be sure that the decal has a bottom rim with some type of bevel to make sure there’s a smooth transmission between the decal and surface in the later stages.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/163096515095_0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you have all these elements, lay them out in a similar fashion to the screenshot above before you move on to adding vertex groups.&lt;/p&gt;
+
+&lt;h2 id=&quot;vertex-groups&quot;&gt;Vertex Groups&lt;/h2&gt;
+
+&lt;p&gt;We’ll need two vertex groups to get the decal working properly. One for the very outer rim of the decal, and another for the larger area around the base of the decal.&lt;/p&gt;
+
+&lt;p&gt;We’ll use these groups later for deforming the decal to the surface using a variety of methods for mesh deformation.&lt;/p&gt;
+
+&lt;h2 id=&quot;using-lattices&quot;&gt;Using Lattices&lt;/h2&gt;
+
+&lt;p&gt;After laying out the lattice and decal over the surface, you can start to use the lattice to shape the decal.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/163096515095_1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Start by applying the lattice to the decal using the lattice modifier. Now the lattice has total control over the decal, which isn’t quite what we want, so we’ll need to use the larger vertex group we created earlier to make sure the lattice deforms only the bottom areas of the decal.&lt;/p&gt;
+
+&lt;p&gt;After the decal is joined to the lattice, apply a shrinkwrap modifier to the lattice with the surface as the target. This should give a rough version of the final outcome. But don’t quit yet, there’s still a lot of perfecting to do.&lt;/p&gt;
+
+&lt;h2 id=&quot;perfecting-the-shape&quot;&gt;Perfecting the Shape&lt;/h2&gt;
+
+&lt;p&gt;To perfect the surface, the outer rim still needs to be adjusted. Otherwise, at certain low viewing angles, we can sometimes still see a slight gap between the two surfaces. Of course, if this gap isn’t visible on whatever model you’re using, then you can go skip this.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/163096515095_2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To adjust the rim, apply a shrinkwrap modifier to the decal with the surface as the target. Next, select the rim vertex group to make sure only the rim is affected.&lt;/p&gt;
+
+&lt;h2 id=&quot;correcting-normals&quot;&gt;Correcting Normals&lt;/h2&gt;
+
+&lt;p&gt;At this point, you should have an almost perfect mesh uniform to the target surface, apart from some shading artifacts. If not, come back to this step later and have a look at the troubleshooting tips below.&lt;/p&gt;
+
+&lt;p&gt;If it all looks good, all that’s left is to apply some normal editing hacks to smooth out the shading. Again, this is also a very picky detail so you might be able to get away with skipping it if you’re not doing close-up renderings.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/163096515095_3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Start by adding a Data Transfer modifier with the surface as the target. Then you can set the settings as shown in the screenshot and click Generate Data Layers near the bottom of the modifier.&lt;/p&gt;
+
+&lt;p&gt;To briefly explain what’s going on here, the data transfer modifier can copy the normal information from the surface model and apply it to the decal. Which makes the Render Engine (or viewport) view the two models as a seamless surface. Of course, this only works if the two meshes are approximately in the same location, hence the need for the previous steps in this guide.&lt;/p&gt;
+
+&lt;h2 id=&quot;troubleshooting&quot;&gt;Troubleshooting&lt;/h2&gt;
+
+&lt;p&gt;If everything went smoothly, great! If not, don’t worry, here are some tips that might help.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Origin Points&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;Having the origin points of the lattice and decal in the same spot is best when possible. Otherwise, sometimes the decal will not deform with the lattice correctly.&lt;/p&gt;
+
+  &lt;p&gt;&lt;strong&gt;Applying Transforms&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;Make sure to apply the scale of all objects using CTRL-A.&lt;/p&gt;
+
+  &lt;p&gt;&lt;strong&gt;Setting the Rim Shrinkwrap&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;If you notice a shadow under the decal, it’s most likely because there’s still a small gap between the surfaces. Adjusting the offset of the shrinkwrap can often solve it. This applies to intercepting pieces as well.&lt;/p&gt;
+
+  &lt;p&gt;&lt;strong&gt;Tweak Data Transfer&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;If you’re having problems with the edge of the decal shading properly, try tweaking the settings of the Data Transfer modifier. Often times its normals that cause seemingly unsolvable problems. Don’t overlook them.&lt;/p&gt;
+
+  &lt;p&gt;&lt;strong&gt;Still having Problems?&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;If you’re still having problems, I’ve uploaded an example file &lt;a href=&quot;https://drive.google.com/file/d/0B-y-nXNXcDMBUzRVTGxwTm04dFk/view?usp=sharing&quot;&gt;here&lt;/a&gt;that has all the settings and modifiers laid out. So if all else fails, you can consult the file for help. ;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;That’s it! I hope this guide was useful. If it was, please consider making a small per-post donation to &lt;a href=&quot;https://www.patreon.com/johnson&quot;&gt;my Patreon page&lt;/a&gt; to support my work here on Topology Guides. I’d really appreciate it. :)&lt;/p&gt;
+
+&lt;p&gt;Happy Modeling!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 17 Jul 2017 11:06:36 -0400</pubDate>
+        <link>http://beta.topologyguides.com//decals</link>
+        <guid isPermaLink="true">http://beta.topologyguides.com//decals</guid>
+        
+        <category>b3d</category>
+        
+        <category>3d modeling</category>
+        
+        <category>decals</category>
+        
+        <category>modifers</category>
+        
+        <category>blender</category>
+        
+        <category>topology</category>
+        
+        <category>hack</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Creating Chamfered Cuts on Corners</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/img/158190198585.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-chamfered-cuts-on-corners&quot;&gt;Creating Chamfered Cuts on Corners&lt;/h2&gt;
+
+&lt;p&gt;Today I’m going to be showing how to model what I called a chamfered cut, meaning a chamferd section of an edge, often found on hard-surface metal parts. &lt;/p&gt;
+
+&lt;p&gt;So without further introduction, let’s get to it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Start off with adding two edge loops to define the area that you want to chamfer. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Next, bevel the edge created by adding the two edge loops to create the basic chamfered shape.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Connect the two points of the triangles near the corners of the shape to make an edge loop down the center of the chamfered area. Also, connect the other two points of the triangles down to remove the n-gons from the model.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Bevel the outer corners of the chamfered area a small amount to make sure the edges are held if subdivisions are applied.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Add more holding edges to the outside to keep the shape contained, then add sub-surf if desired.&lt;/p&gt;
+
+&lt;p&gt;That’s it!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Mar 2017 08:53:43 -0500</pubDate>
+        <link>http://beta.topologyguides.com//creating-chamfered-cuts</link>
+        <guid isPermaLink="true">http://beta.topologyguides.com//creating-chamfered-cuts</guid>
+        
+        <category>topology</category>
+        
+        <category>blender</category>
+        
+        <category>3D Modelling</category>
+        
+        <category>b3d</category>
+        
+        <category>guide</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Creating a Chamfered Circle</title>
+        <description>&lt;p&gt;This time I’m going to show how to model a chamfered circle. I spent a fair bit of time on this one, trying to find a simple method for modeling the shape, and I think I found the simplest one. It’s not ideal (a few ngons), but the other methods I’ve found to be overly complex with too little payoff. Let me know if you have an even better method because I’d love to see it. 🙂&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/155917438770_0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Begin by creating a circle with a low edge count, in order to give a chamfered look. Then add a loop between each edge for the next step.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Next, pull the middle top vertices up in order to begin creating a rounded top.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt; 3.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now bevel the center loop to complete the rounded look. Feel free to use as many segments as needed. Next, add a new circle above the mesh with the same edges count as the loops of the main mesh.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The two loops can now be bridged by using the “bridge edge loops” tool in the edges menu (CTRL+E)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Next, select the corners of the chamfered section and bevel them. Be sure not to bevel the top edges, so that the circular top maintains its shape.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt; 6.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The last step is to add holding edges to all the sharp corners and add sub-surf as desired.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;That’s it! See you in the next guide!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Jan 2017 18:19:16 -0500</pubDate>
+        <link>http://beta.topologyguides.com//creating-chamfered-circle</link>
+        <guid isPermaLink="true">http://beta.topologyguides.com//creating-chamfered-circle</guid>
+        
+        <category>blender</category>
+        
+        <category>3D Modelling</category>
+        
+        <category>topology</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Modeling Grip Ridges</title>
+        <description>&lt;p&gt;This shape is pretty simple. but a useful one if your modeling mechanical or sci-fi things with grips or ridges. So let’s get to it!&lt;/p&gt;
+
+&lt;h2 id=&quot;1&quot;&gt;1.&lt;/h2&gt;
+
+&lt;p&gt;Start by modeling the curved edge you need to incorporate the ridges into. I recommend modeling separate to your main model so that you can tile it later and then add it back in.&lt;/p&gt;
+
+&lt;h2 id=&quot;2&quot;&gt;2.&lt;/h2&gt;
+
+&lt;p&gt;Add two loops to define the inset and outset parts. If you want the inset and outset ridges to be the same width, then make sure the middle section is the same width as the two outer sections combined.&lt;/p&gt;
+
+&lt;h2 id=&quot;3&quot;&gt;3.&lt;/h2&gt;
+
+&lt;p&gt;Cut out the area you’d like to be inset.&lt;/p&gt;
+
+&lt;h2 id=&quot;4&quot;&gt;4.&lt;/h2&gt;
+
+&lt;p&gt;Add a quad to the first four vertices along what will be the wall of the inset. Make sure to model this quad to be properly aligned how you&lt;/p&gt;
+
+&lt;p&gt;like it, as the rest of the inset will be based upon this quad.&lt;/p&gt;
+
+&lt;h2 id=&quot;5&quot;&gt;5.&lt;/h2&gt;
+
+&lt;p&gt;Fill in the rest of the inset using the fill tool (F key), or using the &lt;a href=&quot;http://lesterbanks.com/2013/01/extending-blenders-modeling-capabilities-with-the-f2-addon-for-blender/&quot;&gt;F2 add-on&lt;/a&gt; for Blender to make it even quicker.&lt;/p&gt;
+
+&lt;h2 id=&quot;6&quot;&gt;6.&lt;/h2&gt;
+
+&lt;p&gt;Add holding edges or mean creases to hold the shape, then apply sub-surf. At this point, you can easily tile the ridges using an array and reintegrate it into your mesh.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/153741336695_0.png&quot; alt=&quot;image&quot; /&gt;
+See the final result on Sketchfab:&lt;/p&gt;
+</description>
+        <pubDate>Sun, 27 Nov 2016 14:52:47 -0500</pubDate>
+        <link>http://beta.topologyguides.com//modeling-grip-ridges</link>
+        <guid isPermaLink="true">http://beta.topologyguides.com//modeling-grip-ridges</guid>
+        
+        <category>3d modeling</category>
+        
+        <category>blender</category>
+        
+        <category>guide</category>
+        
+        <category>sub-d</category>
+        
+        <category>topology</category>
+        
+        <category>tutorial</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Cutting Circular Holes in Curved Surfaces</title>
+        <description>&lt;p&gt;I’m back! At least for now. Today i’m answering a question about cutting circular holes in curved surfaces. I learned this technique from the great &lt;a href=&quot;https://www.facebook.com/Kuhn-Industries-345392525548878/&quot;&gt;Chris Kuhn&lt;/a&gt; a few years ago and have used it ever since.&lt;/p&gt;
+
+&lt;h2 id=&quot;1&quot;&gt;1.&lt;/h2&gt;
+
+&lt;p&gt;Start with even quads and an even mesh density.&lt;/p&gt;
+
+&lt;h2 id=&quot;2&quot;&gt;2.&lt;/h2&gt;
+
+&lt;p&gt;Add a Circle with an amount of sides relative to the density of the surface.&lt;/p&gt;
+
+&lt;h2 id=&quot;3&quot;&gt;3.&lt;/h2&gt;
+
+&lt;p&gt;Add a Shrinkwrap modifier to the circle, and set to project onto the surface area. (Be sure to set the direction and axis of projection.)&lt;/p&gt;
+
+&lt;h2 id=&quot;4&quot;&gt;4.&lt;/h2&gt;
+
+&lt;p&gt;Cut necessary areas in surface and merge vertexes along the edge of the hole with the circle. (Be sure to merge to the circle to maintain the circular shape.)&lt;/p&gt;
+
+&lt;h2 id=&quot;5&quot;&gt;5.&lt;/h2&gt;
+
+&lt;p&gt;Finish by checking geometry for errors or improper curvature.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/155917438770_0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 08 Nov 2016 13:58:26 -0500</pubDate>
+        <link>http://beta.topologyguides.com//circular-holes-curved-surfaces</link>
+        <guid isPermaLink="true">http://beta.topologyguides.com//circular-holes-curved-surfaces</guid>
+        
+        <category>blender</category>
+        
+        <category>b3d</category>
+        
+        <category>topology</category>
+        
+        <category>guide</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>How to retopologize 3D scans into low poly game assets</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/img/143124861165_0.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I recently had the honor of writing a tutorial for the Sketchfab Blog about retopologizing 3d scans. I thought this would relevant to this blog so I’ll share it with you. &lt;/p&gt;
+
+&lt;h2 id=&quot;read-the-full-tutorial-here&quot;&gt;Read the full tutorial here: &lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.sketchfab.com/retopologise-3d-scans-low-poly-game-assets/&quot;&gt;https://blog.sketchfab.com/retopologise-3d-scans-low-poly-game-assets&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here’s a snippet of the article:&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-retopology&quot;&gt;What is Retopology?&lt;/h2&gt;
+
+&lt;p&gt;Retopology is the process of rebuilding your model to reduce polygon count and to allow for UV unwrapping and proper deformation for animation models. Retopology is widely used by digital sculptors to convert their models into usable assets in game or film projects. It can also be used on 3d scans for rapid asset creation. Learning the process is quickly becoming a valuable task as more and more game studios are using 3d scans in their asset pipeline.&lt;/p&gt;
+
+&lt;h2 id=&quot;instant-meshes-for-retopology&quot;&gt;Instant Meshes for Retopology&lt;/h2&gt;
+
+&lt;p&gt;For the retopology we’re going to use &lt;a href=&quot;https://github.com/wjakob/instant-meshes&quot;&gt;Instant Meshes&lt;/a&gt;, a free quad-based auto-retopology software recently announced at Siggraph and available for free download. At the moment Instant Meshes supports OBJ, PLY, and ALN formats. By coincidence, the model I’m using is already in OBJ format. But if your model isn’t, there are a number of free converters such as MeshLab or &lt;a href=&quot;http://www.greentoken.de/onlineconv/&quot;&gt;online apps&lt;/a&gt; if you prefer not to download one.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.sketchfab.com/retopologise-3d-scans-low-poly-game-assets/&quot;&gt;Continue Reading&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 20 Apr 2016 15:10:43 -0400</pubDate>
+        <link>http://beta.topologyguides.com//retopologize-3d-scans</link>
+        <guid isPermaLink="true">http://beta.topologyguides.com//retopologize-3d-scans</guid>
+        
+        <category>Retopology</category>
+        
+        
+      </item>
+    
   </channel>
 </rss>
