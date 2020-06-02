@@ -1,0 +1,30 @@
+I"�<p><img src="/assets/img/158190198585.png" alt="" /></p>
+
+<h2 id="creating-chamfered-cuts-on-corners">Creating Chamfered Cuts on Corners</h2>
+
+<p>Today I’m going to be showing how to model what I called a chamfered cut, meaning a chamferd section of an edge, often found on hard-surface metal parts. </p>
+
+<p>So without further introduction, let’s get to it.</p>
+
+<p><strong>1.</strong></p>
+
+<p>Start off with adding two edge loops to define the area that you want to chamfer. </p>
+
+<p><strong>2.</strong></p>
+
+<p>Next, bevel the edge created by adding the two edge loops to create the basic chamfered shape.</p>
+
+<p><strong>3.</strong></p>
+
+<p>Connect the two points of the triangles near the corners of the shape to make an edge loop down the center of the chamfered area. Also, connect the other two points of the triangles down to remove the n-gons from the model.</p>
+
+<p><strong>4.</strong></p>
+
+<p>Bevel the outer corners of the chamfered area a small amount to make sure the edges are held if subdivisions are applied.</p>
+
+<p><strong>5.</strong></p>
+
+<p>Add more holding edges to the outside to keep the shape contained, then add sub-surf if desired.</p>
+
+<p>That’s it!</p>
+:ET

@@ -1,0 +1,28 @@
+I"0<p><img src="/assets/img/163679954765_0.png" alt="image" /><br />
+ <img src="/assets/img/163679954765_1.png" alt="image" /><br />
+Subdivided Result</p>
+
+<h2 id="optimal-edge-loop-reduction-flows"><strong><a href="http://topologyguides.com/2020/05/23/2017-08-01-loop-reduction.html">Optimal Edge Loop Reduction Flows</a></strong></h2>
+
+<p>An essential skill of modeling is knowing how to properly reduce the number of edge loops from a high mesh density to a low density. This involves some tricky topology. So let’s have a look at how to best reduce the various flow types.</p>
+
+<h2 id="2-1-and-4-1">2-1 and 4-1</h2>
+
+<p>The 2-1 and 4-1 flows are the trickiest to handle. Most methods involve substantial distortion of topology and/or the addition of more loops to the left or right of the intersection. </p>
+
+<p>So, after experimenting with different forms, the results above seem to offer the least mesh distortion despite containing Tris and N-gons. </p>
+
+<p>I apologize to any quad purists out there for the lack of quads. ;)</p>
+
+<h2 id="3-1-4-2-and-5-3">3-1, 4-2, and 5-3</h2>
+
+<p>The three of these flows are very standard flows that involve redirecting the edge loops back towards their origin. This trick is very effective. and maintains almost perfect topology in most situations. </p>
+
+<p>As you can see, the 4-2 and 5-3 flows follow the form of the 3-1 flow. With the only differing factor being the number of center loops. This shows just how adaptable this method of reduction can be. </p>
+
+<hr />
+
+<p>Hope this helps! if so, be sure to hit one of those share buttons below!</p>
+
+<p>Also, if you’re interested in supporting the content here on Topology Guides, please consider making a small donation <a href="https://www.patreon.com/johnson">to my Patreon page</a> to help with the creation of new content!</p>
+:ET

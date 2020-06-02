@@ -1,0 +1,20 @@
+I"�<p><img src="/assets/img/143124861165_0.jpg" alt="image" /></p>
+
+<p>I recently had the honor of writing a tutorial for the Sketchfab Blog about retopologizing 3d scans. I thought this would relevant to this blog so I’ll share it with you. </p>
+
+<h2 id="read-the-full-tutorial-here">Read the full tutorial here: </h2>
+
+<p><a href="https://blog.sketchfab.com/retopologise-3d-scans-low-poly-game-assets/">https://blog.sketchfab.com/retopologise-3d-scans-low-poly-game-assets</a></p>
+
+<p>Here’s a snippet of the article:</p>
+
+<h2 id="what-is-retopology">What is Retopology?</h2>
+
+<p>Retopology is the process of rebuilding your model to reduce polygon count and to allow for UV unwrapping and proper deformation for animation models. Retopology is widely used by digital sculptors to convert their models into usable assets in game or film projects. It can also be used on 3d scans for rapid asset creation. Learning the process is quickly becoming a valuable task as more and more game studios are using 3d scans in their asset pipeline.</p>
+
+<h2 id="instant-meshes-for-retopology">Instant Meshes for Retopology</h2>
+
+<p>For the retopology we’re going to use <a href="https://github.com/wjakob/instant-meshes">Instant Meshes</a>, a free quad-based auto-retopology software recently announced at Siggraph and available for free download. At the moment Instant Meshes supports OBJ, PLY, and ALN formats. By coincidence, the model I’m using is already in OBJ format. But if your model isn’t, there are a number of free converters such as MeshLab or <a href="http://www.greentoken.de/onlineconv/">online apps</a> if you prefer not to download one.</p>
+
+<p><a href="https://blog.sketchfab.com/retopologise-3d-scans-low-poly-game-assets/">Continue Reading</a></p>
+:ET
