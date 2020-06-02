@@ -12,6 +12,7 @@ tags:
 tumblr_url: https://topologyguides.com/post/618124624591536128/modeling-bevel-width-transitions
 hero: https://source.unsplash.com/random
 overlay: black
+alias: /post/618124624591536128/modeling-bevel-width-transitions
 ---
 For some models, creating bevels is a simple as adding a bevel modifer. But for other models, more complex methods are needed. One of these methods is creating transitions between two bevel widths. Be it a car dashboard or a piece of furniture, bevel transitions are everywhere. This short guide will show you the most optimal ways to create transitions between bevel widths.
 

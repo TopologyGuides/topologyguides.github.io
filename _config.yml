@@ -3,7 +3,7 @@
                               # set to '' in case of hosting on GitHub
 url                          : 'http://beta.topologyguides.com/' # the base hostname & protocol for your site
                                   # `http://<username>.github.io` - for GitHub
-
+safe                         : false
 blog:
   title                      : Topology Guides
   description                : Guides for 3d Artists
