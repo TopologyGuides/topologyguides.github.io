@@ -7,6 +7,7 @@ tags:
 - 3D Modelling
 - topology
 tumblr_url: https://topologyguides.com/post/155917438770/creating-chamfered-circle
+alias: /post/155917438770/creating-chamfered-circle
 ---
 This time I’m going to show how to model a chamfered circle. I spent a fair bit of time on this one, trying to find a simple method for modeling the shape, and I think I found the simplest one. It’s not ideal (a few ngons), but the other methods I’ve found to be overly complex with too little payoff. Let me know if you have an even better method because I’d love to&nbsp;see it. 🙂
 

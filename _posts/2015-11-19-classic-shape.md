@@ -8,6 +8,7 @@ tags:
 - guide
 - topology
 tumblr_url: https://topologyguides.com/post/133528602155/a-simple-method-of-modeling-a-classic-shape
+alias: /post/133528602155/a-simple-method-of-modeling-a-classic-shape
 ---
 ![](/assets/img/133528602155.png)
 

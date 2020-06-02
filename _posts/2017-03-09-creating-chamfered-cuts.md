@@ -9,6 +9,7 @@ tags:
 - b3d
 - guide
 tumblr_url: https://topologyguides.com/post/158190198585/creating-chamfered-cuts-on-corners-today-im-going
+alias: /post/158190198585/creating-chamfered-cuts-on-corners-today-im-going
 ---
  ![](/assets/img/158190198585.png)  
 

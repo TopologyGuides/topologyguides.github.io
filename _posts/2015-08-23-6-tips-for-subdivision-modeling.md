@@ -7,6 +7,7 @@ tags:
 - 3D Modelling
 - tips
 tumblr_url: https://topologyguides.com/post/127424456675/6-tips-for-subdivision-modeling
+alias: /post/127424456675/6-tips-for-subdivision-modeling
 ---
 Here’s a few tips to keep in mind when Sub-d modeling. I hope you like this written format. If not, let me know.
 
@@ -33,4 +34,3 @@ Modifiers are non-destructive. Meaning you can turn their effects on or off at a
 ## 6. Creases for small or distant Objects
 
 Instead of adding holding edges to keep your corners sharp, crease your edge instead. It will keep your polygon count down and will look perfectly adequate for small or distant objects.
-

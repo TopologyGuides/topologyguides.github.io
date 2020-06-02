@@ -5,8 +5,9 @@ date: '2015-07-16T11:35:41-04:00'
 tags:
 - topology
 - 3d modelling
-- guide 
+- guide
 tumblr_url: https://topologyguides.com/post/124246696010/types-of-edge-bevels-for-subdivision-surface
+alias: /post/124246696010/types-of-edge-bevels-for-subdivision-surface
 ---
  ![](/assets/img/124246696010.png)  
 

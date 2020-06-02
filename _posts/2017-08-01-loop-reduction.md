@@ -11,6 +11,7 @@ tags:
 - step down
 - edge loops
 tumblr_url: https://topologyguides.com/post/163679954765/loop-reduction
+alias: /post/163679954765/loop-reduction
 ---
  ![image](/assets/img/163679954765_0.png)  
  ![image](/assets/img/163679954765_1.png)  

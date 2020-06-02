@@ -7,6 +7,7 @@ tags:
 - 3d modelling
 - guide
 tumblr_url: https://topologyguides.com/post/124121026900/five-types-of-cylinder-caps-bottom-row-is-with
+alias: /post/124121567070/3-types-of-rounded-cylinder-caps
 ---
  ![](/assets/img/124121026900.png)  
 

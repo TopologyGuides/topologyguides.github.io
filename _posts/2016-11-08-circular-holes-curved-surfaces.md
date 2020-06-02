@@ -8,6 +8,7 @@ tags:
 - topology
 - guide
 tumblr_url: https://topologyguides.com/post/152907366360/cutting-circular-holes-in-curved-surfaces
+alias: /post/152907366360/cutting-circular-holes-in-curved-surfaces
 ---
 I’m back! At least for now. Today i’m answering a question about cutting circular holes in curved surfaces. I learned this technique from the great [Chris Kuhn](https://www.facebook.com/Kuhn-Industries-345392525548878/) a few years ago and have used it ever since.
 

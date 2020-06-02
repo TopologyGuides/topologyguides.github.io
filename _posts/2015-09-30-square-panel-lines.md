@@ -8,6 +8,7 @@ tags:
 - b3d
 - 3ds max
 tumblr_url: https://topologyguides.com/post/130229522785/a-fast-method-for-creating-square-panel-lines
+alias: /post/130229522785/a-fast-method-for-creating-square-panel-lines
 ---
  ![](/assets/img/130229522785.png)  
 

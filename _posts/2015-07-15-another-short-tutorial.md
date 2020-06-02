@@ -7,6 +7,7 @@ tags:
 - guide
 - 3d modelling
 tumblr_url: https://topologyguides.com/post/124163086310/another-short-tutorial-not-sure-what-to-call-this
+alias: /post/124163086310/another-short-tutorial-not-sure-what-to-call-this
 ---
  ![](/assets/img/124163086310.png)  
 

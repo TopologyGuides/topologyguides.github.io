@@ -11,6 +11,7 @@ tags:
 tumblr_url: https://topologyguides.com/post/175483457845/moving-and-manipulating-edge-poles
 hero: https://source.unsplash.com/random
 overlay: grey
+alias: /post/175483457845/moving-and-manipulating-edge-poles
 ---
 Let’s talk about Edge poles, those famously aggravating little points on a mesh that cause so many headaches for 3d artists around the world. Why are they so terrible? What can we do about them? And when are they actually good to use?
 

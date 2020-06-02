@@ -9,6 +9,7 @@ tags:
 - mesh
 - cgcookie
 tumblr_url: https://topologyguides.com/post/165094485335/artifacts
+alias: /post/165094485335/artifacts
 ---
 ![](assets/img/165094485335_0.png)<br>
 If you’ve ever tried to model a car or any other shiny object, you know how hard it is to get perfect reflections outside of using CAD programs. It’s tedious and virtually impossible to get 100% right.

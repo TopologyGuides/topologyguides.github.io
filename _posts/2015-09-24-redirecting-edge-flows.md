@@ -7,6 +7,7 @@ tags:
 - guide
 - b3d
 tumblr_url: https://topologyguides.com/post/129783341675/redirecting-edge-flows-within-a-mesh
+alias: /post/129783341675/redirecting-edge-flows-within-a-mesh
 ---
  ![image](/assets/img/129783341675.png)  
 

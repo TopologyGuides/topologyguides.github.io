@@ -8,6 +8,7 @@ tags:
 - corners
 - sub-d
 tumblr_url: https://topologyguides.com/post/126426510380/sub-d-corner-types-click-to-see-high-res
+alias: /post/126426510380/sub-d-corner-types-click-to-see-high-res
 ---
  ![](/assets/img/126426510380.png)  
 

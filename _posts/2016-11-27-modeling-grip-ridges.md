@@ -10,6 +10,7 @@ tags:
 - topology
 - tutorial
 tumblr_url: https://topologyguides.com/post/153741336695/modeling-grip-ridges
+alias: /post/153741336695/modeling-grip-ridges
 ---
 This shape is pretty simple. but a useful one if your modeling mechanical or sci-fi things with grips or ridges. So let’s get to it!
 

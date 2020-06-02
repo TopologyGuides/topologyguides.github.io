@@ -5,6 +5,7 @@ date: '2016-04-20T15:10:43-04:00'
 tags:
 - Retopology
 tumblr_url: https://topologyguides.com/post/143124861165/how-to-retopologize-3d-scans-into-low-poly-game
+alias: /post/143124861165/how-to-retopologize-3d-scans-into-low-poly-game
 ---
 ![image](/assets/img/143124861165_0.jpg)
 

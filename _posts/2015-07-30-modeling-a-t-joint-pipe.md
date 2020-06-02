@@ -9,6 +9,7 @@ tags:
 - b3d
 - 3dsmax
 tumblr_url: https://topologyguides.com/post/125433745815/modeling-a-t-joint-pipe
+alias: /post/125433745815/modeling-a-t-joint-pipe
 ---
  ![](/assets/img/125433745815.png)  
 

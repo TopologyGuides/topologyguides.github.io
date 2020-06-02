@@ -7,6 +7,7 @@ tags:
 - guide
 - tutorial
 tumblr_url: https://topologyguides.com/post/124120926080/adding-holes-to-a-flat-surface
+alias: /post/124120926080/adding-holes-to-a-flat-surface
 ---
  ![](/assets/img/124120926080.png)  
 

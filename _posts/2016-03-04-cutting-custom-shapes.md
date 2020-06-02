@@ -8,6 +8,7 @@ tags:
 - 3d
 - holes
 tumblr_url: https://topologyguides.com/post/140479921825/cutting-custom-shapes
+alias: /post/140479921825/cutting-custom-shapes
 ---
 Recently, I received a question in regards to cutting a custom hole onto a surface. Instead of addressing a unique situation, I thought I would give some guidelines for cutting holes. So here it goes.
 
