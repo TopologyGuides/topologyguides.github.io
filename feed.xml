@@ -3,10 +3,10 @@
   <channel>
     <title>Topology Guides</title>
     <description>Guides for 3d Artists</description>
-    <link>http://beta.topologyguides.com//</link>
-    <atom:link href="http://beta.topologyguides.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 04 Jun 2020 14:19:39 -0400</pubDate>
-    <lastBuildDate>Thu, 04 Jun 2020 14:19:39 -0400</lastBuildDate>
+    <link>https://topologyguides.com//</link>
+    <atom:link href="https://topologyguides.com//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 04 Jun 2020 14:29:03 -0400</pubDate>
+    <lastBuildDate>Thu, 04 Jun 2020 14:29:03 -0400</lastBuildDate>
     <generator>Jekyll v4.0.1</generator>
     
       <item>
@@ -36,8 +36,8 @@
 
 </description>
         <pubDate>Thu, 14 May 2020 16:52:58 -0400</pubDate>
-        <link>http://beta.topologyguides.com//bevel-width-transitions</link>
-        <guid isPermaLink="true">http://beta.topologyguides.com//bevel-width-transitions</guid>
+        <link>https://topologyguides.com//bevel-width-transitions</link>
+        <guid isPermaLink="true">https://topologyguides.com//bevel-width-transitions</guid>
         
         <category>3d modeling</category>
         
@@ -103,8 +103,8 @@
 &lt;p&gt;That’s all! I hope this short primer on edge poles has given you a better understanding of how to use them effectively. If this guide was useful to you, then please consider sharing it or contributing to the project’s &lt;a href=&quot;https://www.patreon.com/johnson&quot;&gt;Patreon page&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Mon, 02 Jul 2018 17:08:42 -0400</pubDate>
-        <link>http://beta.topologyguides.com//manipulating-edge-poles</link>
-        <guid isPermaLink="true">http://beta.topologyguides.com//manipulating-edge-poles</guid>
+        <link>https://topologyguides.com//manipulating-edge-poles</link>
+        <guid isPermaLink="true">https://topologyguides.com//manipulating-edge-poles</guid>
         
         <category>blender</category>
         
@@ -175,8 +175,8 @@ Depending on your software of choice, you might have a Matcap viewer available o
 &lt;a href=&quot;https://cgcookie.com/learn-blender&quot;&gt;&lt;figure class=&quot;tmblr-full&quot; data-orig-height=&quot;291&quot; data-orig-width=&quot;1496&quot;&gt;&lt;img src=&quot;assets/img/165094485335_5.png&quot; alt=&quot;image&quot; /&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 07 Sep 2017 18:31:31 -0400</pubDate>
-        <link>http://beta.topologyguides.com//artifacts</link>
-        <guid isPermaLink="true">http://beta.topologyguides.com//artifacts</guid>
+        <link>https://topologyguides.com//artifacts</link>
+        <guid isPermaLink="true">https://topologyguides.com//artifacts</guid>
         
         <category>blender</category>
         
@@ -222,8 +222,8 @@ Subdivided Result&lt;/p&gt;
 &lt;p&gt;Also, if you’re interested in supporting the content here on Topology Guides, please consider making a small donation &lt;a href=&quot;https://www.patreon.com/johnson&quot;&gt;to my Patreon page&lt;/a&gt; to help with the creation of new content!&lt;/p&gt;
 </description>
         <pubDate>Tue, 01 Aug 2017 12:05:18 -0400</pubDate>
-        <link>http://beta.topologyguides.com//loop-reduction</link>
-        <guid isPermaLink="true">http://beta.topologyguides.com//loop-reduction</guid>
+        <link>https://topologyguides.com//loop-reduction</link>
+        <guid isPermaLink="true">https://topologyguides.com//loop-reduction</guid>
         
         <category>blender</category>
         
@@ -335,8 +335,8 @@ Subdivided Result&lt;/p&gt;
 &lt;p&gt;Happy Modeling!&lt;/p&gt;
 </description>
         <pubDate>Mon, 17 Jul 2017 11:06:36 -0400</pubDate>
-        <link>http://beta.topologyguides.com//decals</link>
-        <guid isPermaLink="true">http://beta.topologyguides.com//decals</guid>
+        <link>https://topologyguides.com//decals</link>
+        <guid isPermaLink="true">https://topologyguides.com//decals</guid>
         
         <category>b3d</category>
         
@@ -388,8 +388,8 @@ Subdivided Result&lt;/p&gt;
 &lt;p&gt;That’s it!&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Mar 2017 08:53:43 -0500</pubDate>
-        <link>http://beta.topologyguides.com//creating-chamfered-cuts</link>
-        <guid isPermaLink="true">http://beta.topologyguides.com//creating-chamfered-cuts</guid>
+        <link>https://topologyguides.com//creating-chamfered-cuts</link>
+        <guid isPermaLink="true">https://topologyguides.com//creating-chamfered-cuts</guid>
         
         <category>topology</category>
         
@@ -439,8 +439,8 @@ Subdivided Result&lt;/p&gt;
 &lt;p&gt;That’s it! See you in the next guide!&lt;/p&gt;
 </description>
         <pubDate>Sun, 15 Jan 2017 18:19:16 -0500</pubDate>
-        <link>http://beta.topologyguides.com//creating-chamfered-circle</link>
-        <guid isPermaLink="true">http://beta.topologyguides.com//creating-chamfered-circle</guid>
+        <link>https://topologyguides.com//creating-chamfered-circle</link>
+        <guid isPermaLink="true">https://topologyguides.com//creating-chamfered-circle</guid>
         
         <category>blender</category>
         
@@ -485,8 +485,8 @@ Subdivided Result&lt;/p&gt;
 See the final result on Sketchfab:&lt;/p&gt;
 </description>
         <pubDate>Sun, 27 Nov 2016 14:52:47 -0500</pubDate>
-        <link>http://beta.topologyguides.com//modeling-grip-ridges</link>
-        <guid isPermaLink="true">http://beta.topologyguides.com//modeling-grip-ridges</guid>
+        <link>https://topologyguides.com//modeling-grip-ridges</link>
+        <guid isPermaLink="true">https://topologyguides.com//modeling-grip-ridges</guid>
         
         <category>3d modeling</category>
         
@@ -530,8 +530,8 @@ See the final result on Sketchfab:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/155917438770_0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 08 Nov 2016 13:58:26 -0500</pubDate>
-        <link>http://beta.topologyguides.com//circular-holes-curved-surfaces</link>
-        <guid isPermaLink="true">http://beta.topologyguides.com//circular-holes-curved-surfaces</guid>
+        <link>https://topologyguides.com//circular-holes-curved-surfaces</link>
+        <guid isPermaLink="true">https://topologyguides.com//circular-holes-curved-surfaces</guid>
         
         <category>blender</category>
         
@@ -567,8 +567,8 @@ See the final result on Sketchfab:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://blog.sketchfab.com/retopologise-3d-scans-low-poly-game-assets/&quot;&gt;Continue Reading&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Apr 2016 15:10:43 -0400</pubDate>
-        <link>http://beta.topologyguides.com//retopologize-3d-scans</link>
-        <guid isPermaLink="true">http://beta.topologyguides.com//retopologize-3d-scans</guid>
+        <link>https://topologyguides.com//retopologize-3d-scans</link>
+        <guid isPermaLink="true">https://topologyguides.com//retopologize-3d-scans</guid>
         
         <category>Retopology</category>
         
