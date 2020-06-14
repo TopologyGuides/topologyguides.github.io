@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Modeling a Human Hand
-date: '2020-06-11T16:52:58-04:00'
+date: '2020-06-14T01:52:58-04:00'
 tags:
 - 3d modeling
 - organic
