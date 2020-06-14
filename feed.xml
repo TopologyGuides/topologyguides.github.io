@@ -3,11 +3,95 @@
   <channel>
     <title>Topology Guides</title>
     <description>Guides for 3d Artists</description>
-    <link>https://topologyguides.com//</link>
-    <atom:link href="https://topologyguides.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 04 Jun 2020 14:29:03 -0400</pubDate>
-    <lastBuildDate>Thu, 04 Jun 2020 14:29:03 -0400</lastBuildDate>
+    <link>http://beta.topologyguides.com//</link>
+    <atom:link href="http://beta.topologyguides.com//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 14 Jun 2020 12:56:25 -0400</pubDate>
+    <lastBuildDate>Sun, 14 Jun 2020 12:56:25 -0400</lastBuildDate>
     <generator>Jekyll v4.0.1</generator>
+    
+      <item>
+        <title>Modeling a Human Hand</title>
+        <description>&lt;p&gt;Today we’re going to take a look at a very common modeling task modeling hands. Hands are one of the most complex shapes on the human body to model. An arm is one thing, but another five appendages? Topology and mesh density can quickly get out of hand (pun intended). Furthermore, animated ready hands must be ready to deform in almost any shape while still looking good.&lt;/p&gt;
+
+&lt;p&gt;So without further ranting, here’s a couple tips for modeling your next hand. Once you reach the bottom, you can also download the final hand with loop flow notes using the Sketchfab link.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;referencereferencereference&quot;&gt;Reference…Reference….Reference!&lt;/h3&gt;
+
+&lt;p&gt;Organic forms, especially those we’re most familiar with, require acute attention to reference. It’s easy to take as granted that we know what a human hand looks like, but once you begin modeling, it’s easy to assume forms and end up in the uncanny valley. Even when working with base meshes, reference is a necessity. Base meshes are all about recognizing the major forms of a model, that means paying attention to muscle and bone structure is just as important at this step as it is for sculpting or texturing.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/hand_ref.png&quot; alt=&quot;hand_ref&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For example, while working on this post, I initially modeled the back of the hand with inset loops near the knuckles, but after looking at my own hand, I realized that it would be more accurate to have the loops extend downwards across the hand because the whole area deforms in certain positions.&lt;/p&gt;
+
+&lt;p&gt;TLDR: Check your reference…and then check it again.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;identify-primary-loops&quot;&gt;Identify Primary Loops&lt;/h3&gt;
+
+&lt;p&gt;The human hand has a lot of primary loop locations. This is why it’s a safe bet to start identifying these &lt;em&gt;before&lt;/em&gt; you build out much of the model. A great way to do this is by using the grease pencil tool over your reference image. Mark out anywhere that should have clean loops of edges. For example, the wrist, fingers, knuckles, and thumb pad. Marking these will help you avoid redoing work correcting edge loops that flow in the wrong ways.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/hand_sketch.png&quot; alt=&quot;hand_sketch&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you’ve marked your main loops build them out using geometry. You can automate this using something like &lt;a href=&quot;https://blendermarket.com/products/retopoflow&quot;&gt;Retopoflow&lt;/a&gt;. Remember to check your edge count in loops. Each finger should have the same number of loops. Sticking to multiple of 4 for loops is also general good practice. Pay special attention to the loop count of the wrist; 16 is generally plenty and will be at least close to the loop count of whatever arm you attach.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;do-the-easy-stuff-first&quot;&gt;Do the Easy Stuff First&lt;/h3&gt;
+
+&lt;p&gt;Next, use the loops you made to fill in the areas between them. If you see a problem coming at a loop transition, leave it and work on filling as much clean topology as you can. If you work too much to make a good transition area, only to need to fix it again, modeling can get frustrating very quickly. You’ll likely see most problems at the base of the thumb and between the fingers.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;fix-tricky-loop-transitions&quot;&gt;Fix Tricky Loop Transitions&lt;/h3&gt;
+
+&lt;p&gt;Now you should have enough topology to know what your transition points need to be like. Now your topology skills really come into play. There is no fix all solution to transition points, but these principles are good guides: First, check your loop flows. The easiest way to get in a mess is linking one end of a loop to the wrong point on the opposite end. Second, learn &lt;a href=&quot;https://topologyguides.com/loop-reduction&quot;&gt;loop reduction flows&lt;/a&gt;. These will be essential to ending flows so you don’t end up with dozens of edge loops at the wrist. And Lastly, persevere. Sometimes you just gotta keep trying new things until it works. Don’t be afraid to delete topology.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/hand_loops.png&quot; alt=&quot;hand_loops&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;make-your-rig-happy&quot;&gt;Make Your Rig Happy&lt;/h3&gt;
+
+&lt;p&gt;Last, but not least, add deformation areas and make your rig (or rigger) happy. Deformation areas (marked in blue) help topology stretch properly in extreme positions. The best way to add these areas is to outset a grouping of faces by pressing &lt;strong&gt;I&lt;/strong&gt; then &lt;strong&gt;O&lt;/strong&gt; and adding a small loop around the area that needs extra geometry. Generally, the tops of joints need the most extra geometry. in some cases, it can be easier to add more loops instead, but this can also create extra to geometry to compress inside the joint.&lt;/p&gt;
+
+&lt;p&gt;Below you can see the final result and the main edge flow highlighted. You can also download the model from &lt;a href=&quot;https://sketchfab.com/models/de4f151a05494152b4c213ccafc4f646&quot;&gt;Sketchfab here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/hand_topology.png&quot; alt=&quot;hand_topology&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;sketchfab-embed-wrapper&quot;&gt;
+    &lt;iframe title=&quot;A 3D model&quot; width=&quot;768&quot; height=&quot;420&quot; src=&quot;https://sketchfab.com/models/de4f151a05494152b4c213ccafc4f646/embed?camera=0&amp;amp;ui_controls=1&amp;amp;ui_infos=1&amp;amp;ui_inspector=1&amp;amp;ui_stop=1&amp;amp;ui_watermark=1&amp;amp;ui_watermark_link=1&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; vr&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you enjoyed this post, please consider supporting the site on Patreon help pay for website costs and give me motivation to keep writing guides!&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.patreon.com/bePatron?u=4389823&quot; data-patreon-widget-type=&quot;become-patron-button&quot;&gt;Become a Patron!&lt;/a&gt;&lt;script async=&quot;&quot; src=&quot;https://c6.patreon.com/becomePatronButton.bundle.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 14 Jun 2020 01:52:58 -0400</pubDate>
+        <link>http://beta.topologyguides.com//human-hand</link>
+        <guid isPermaLink="true">http://beta.topologyguides.com//human-hand</guid>
+        
+        <category>3d modeling</category>
+        
+        <category>organic</category>
+        
+        <category>topology</category>
+        
+        <category>3d</category>
+        
+        <category>blender</category>
+        
+        <category>b3d</category>
+        
+        <category>hand</category>
+        
+        
+      </item>
     
       <item>
         <title>Modeling Bevel Width Transitions</title>
@@ -36,8 +120,8 @@
 
 </description>
         <pubDate>Thu, 14 May 2020 16:52:58 -0400</pubDate>
-        <link>https://topologyguides.com//bevel-width-transitions</link>
-        <guid isPermaLink="true">https://topologyguides.com//bevel-width-transitions</guid>
+        <link>http://beta.topologyguides.com//bevel-width-transitions</link>
+        <guid isPermaLink="true">http://beta.topologyguides.com//bevel-width-transitions</guid>
         
         <category>3d modeling</category>
         
@@ -103,8 +187,8 @@
 &lt;p&gt;That’s all! I hope this short primer on edge poles has given you a better understanding of how to use them effectively. If this guide was useful to you, then please consider sharing it or contributing to the project’s &lt;a href=&quot;https://www.patreon.com/johnson&quot;&gt;Patreon page&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Mon, 02 Jul 2018 17:08:42 -0400</pubDate>
-        <link>https://topologyguides.com//manipulating-edge-poles</link>
-        <guid isPermaLink="true">https://topologyguides.com//manipulating-edge-poles</guid>
+        <link>http://beta.topologyguides.com//manipulating-edge-poles</link>
+        <guid isPermaLink="true">http://beta.topologyguides.com//manipulating-edge-poles</guid>
         
         <category>blender</category>
         
@@ -175,8 +259,8 @@ Depending on your software of choice, you might have a Matcap viewer available o
 &lt;a href=&quot;https://cgcookie.com/learn-blender&quot;&gt;&lt;figure class=&quot;tmblr-full&quot; data-orig-height=&quot;291&quot; data-orig-width=&quot;1496&quot;&gt;&lt;img src=&quot;assets/img/165094485335_5.png&quot; alt=&quot;image&quot; /&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 07 Sep 2017 18:31:31 -0400</pubDate>
-        <link>https://topologyguides.com//artifacts</link>
-        <guid isPermaLink="true">https://topologyguides.com//artifacts</guid>
+        <link>http://beta.topologyguides.com//artifacts</link>
+        <guid isPermaLink="true">http://beta.topologyguides.com//artifacts</guid>
         
         <category>blender</category>
         
@@ -222,8 +306,8 @@ Subdivided Result&lt;/p&gt;
 &lt;p&gt;Also, if you’re interested in supporting the content here on Topology Guides, please consider making a small donation &lt;a href=&quot;https://www.patreon.com/johnson&quot;&gt;to my Patreon page&lt;/a&gt; to help with the creation of new content!&lt;/p&gt;
 </description>
         <pubDate>Tue, 01 Aug 2017 12:05:18 -0400</pubDate>
-        <link>https://topologyguides.com//loop-reduction</link>
-        <guid isPermaLink="true">https://topologyguides.com//loop-reduction</guid>
+        <link>http://beta.topologyguides.com//loop-reduction</link>
+        <guid isPermaLink="true">http://beta.topologyguides.com//loop-reduction</guid>
         
         <category>blender</category>
         
@@ -335,8 +419,8 @@ Subdivided Result&lt;/p&gt;
 &lt;p&gt;Happy Modeling!&lt;/p&gt;
 </description>
         <pubDate>Mon, 17 Jul 2017 11:06:36 -0400</pubDate>
-        <link>https://topologyguides.com//decals</link>
-        <guid isPermaLink="true">https://topologyguides.com//decals</guid>
+        <link>http://beta.topologyguides.com//decals</link>
+        <guid isPermaLink="true">http://beta.topologyguides.com//decals</guid>
         
         <category>b3d</category>
         
@@ -388,8 +472,8 @@ Subdivided Result&lt;/p&gt;
 &lt;p&gt;That’s it!&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Mar 2017 08:53:43 -0500</pubDate>
-        <link>https://topologyguides.com//creating-chamfered-cuts</link>
-        <guid isPermaLink="true">https://topologyguides.com//creating-chamfered-cuts</guid>
+        <link>http://beta.topologyguides.com//creating-chamfered-cuts</link>
+        <guid isPermaLink="true">http://beta.topologyguides.com//creating-chamfered-cuts</guid>
         
         <category>topology</category>
         
@@ -439,8 +523,8 @@ Subdivided Result&lt;/p&gt;
 &lt;p&gt;That’s it! See you in the next guide!&lt;/p&gt;
 </description>
         <pubDate>Sun, 15 Jan 2017 18:19:16 -0500</pubDate>
-        <link>https://topologyguides.com//creating-chamfered-circle</link>
-        <guid isPermaLink="true">https://topologyguides.com//creating-chamfered-circle</guid>
+        <link>http://beta.topologyguides.com//creating-chamfered-circle</link>
+        <guid isPermaLink="true">http://beta.topologyguides.com//creating-chamfered-circle</guid>
         
         <category>blender</category>
         
@@ -485,8 +569,8 @@ Subdivided Result&lt;/p&gt;
 See the final result on Sketchfab:&lt;/p&gt;
 </description>
         <pubDate>Sun, 27 Nov 2016 14:52:47 -0500</pubDate>
-        <link>https://topologyguides.com//modeling-grip-ridges</link>
-        <guid isPermaLink="true">https://topologyguides.com//modeling-grip-ridges</guid>
+        <link>http://beta.topologyguides.com//modeling-grip-ridges</link>
+        <guid isPermaLink="true">http://beta.topologyguides.com//modeling-grip-ridges</guid>
         
         <category>3d modeling</category>
         
@@ -530,8 +614,8 @@ See the final result on Sketchfab:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/155917438770_0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 08 Nov 2016 13:58:26 -0500</pubDate>
-        <link>https://topologyguides.com//circular-holes-curved-surfaces</link>
-        <guid isPermaLink="true">https://topologyguides.com//circular-holes-curved-surfaces</guid>
+        <link>http://beta.topologyguides.com//circular-holes-curved-surfaces</link>
+        <guid isPermaLink="true">http://beta.topologyguides.com//circular-holes-curved-surfaces</guid>
         
         <category>blender</category>
         
@@ -540,37 +624,6 @@ See the final result on Sketchfab:&lt;/p&gt;
         <category>topology</category>
         
         <category>guide</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>How to retopologize 3D scans into low poly game assets</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/assets/img/143124861165_0.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I recently had the honor of writing a tutorial for the Sketchfab Blog about retopologizing 3d scans. I thought this would relevant to this blog so I’ll share it with you. &lt;/p&gt;
-
-&lt;h2 id=&quot;read-the-full-tutorial-here&quot;&gt;Read the full tutorial here: &lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blog.sketchfab.com/retopologise-3d-scans-low-poly-game-assets/&quot;&gt;https://blog.sketchfab.com/retopologise-3d-scans-low-poly-game-assets&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Here’s a snippet of the article:&lt;/p&gt;
-
-&lt;h2 id=&quot;what-is-retopology&quot;&gt;What is Retopology?&lt;/h2&gt;
-
-&lt;p&gt;Retopology is the process of rebuilding your model to reduce polygon count and to allow for UV unwrapping and proper deformation for animation models. Retopology is widely used by digital sculptors to convert their models into usable assets in game or film projects. It can also be used on 3d scans for rapid asset creation. Learning the process is quickly becoming a valuable task as more and more game studios are using 3d scans in their asset pipeline.&lt;/p&gt;
-
-&lt;h2 id=&quot;instant-meshes-for-retopology&quot;&gt;Instant Meshes for Retopology&lt;/h2&gt;
-
-&lt;p&gt;For the retopology we’re going to use &lt;a href=&quot;https://github.com/wjakob/instant-meshes&quot;&gt;Instant Meshes&lt;/a&gt;, a free quad-based auto-retopology software recently announced at Siggraph and available for free download. At the moment Instant Meshes supports OBJ, PLY, and ALN formats. By coincidence, the model I’m using is already in OBJ format. But if your model isn’t, there are a number of free converters such as MeshLab or &lt;a href=&quot;http://www.greentoken.de/onlineconv/&quot;&gt;online apps&lt;/a&gt; if you prefer not to download one.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blog.sketchfab.com/retopologise-3d-scans-low-poly-game-assets/&quot;&gt;Continue Reading&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 20 Apr 2016 15:10:43 -0400</pubDate>
-        <link>https://topologyguides.com//retopologize-3d-scans</link>
-        <guid isPermaLink="true">https://topologyguides.com//retopologize-3d-scans</guid>
-        
-        <category>Retopology</category>
         
         
       </item>
