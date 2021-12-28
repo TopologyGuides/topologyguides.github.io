@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: http://beta.topologyguides.com//sitemap.xml
