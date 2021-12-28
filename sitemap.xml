@@ -3,22 +3,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//modeling-for-animation/</loc>
-      
-        <lastmod>2021-12-27T00:52:58-05:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.7</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://beta.topologyguides.com//human-hand/</loc>
+      <loc>http://topologyguides.com//human-hand/</loc>
       
         <lastmod>2020-06-14T01:52:58-04:00</lastmod>
       
@@ -33,7 +18,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//bevel-width-transitions/</loc>
+      <loc>http://topologyguides.com//bevel-width-transitions/</loc>
       
         <lastmod>2020-05-14T16:52:58-04:00</lastmod>
       
@@ -48,7 +33,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//manipulating-edge-poles/</loc>
+      <loc>http://topologyguides.com//manipulating-edge-poles/</loc>
       
         <lastmod>2018-07-02T17:08:42-04:00</lastmod>
       
@@ -63,7 +48,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//artifacts/</loc>
+      <loc>http://topologyguides.com//artifacts/</loc>
       
         <lastmod>2017-09-07T18:31:31-04:00</lastmod>
       
@@ -78,7 +63,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//loop-reduction/</loc>
+      <loc>http://topologyguides.com//loop-reduction/</loc>
       
         <lastmod>2017-08-01T12:05:18-04:00</lastmod>
       
@@ -93,7 +78,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//decals/</loc>
+      <loc>http://topologyguides.com//decals/</loc>
       
         <lastmod>2017-07-17T11:06:36-04:00</lastmod>
       
@@ -108,7 +93,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//creating-chamfered-cuts/</loc>
+      <loc>http://topologyguides.com//creating-chamfered-cuts/</loc>
       
         <lastmod>2017-03-09T08:53:43-05:00</lastmod>
       
@@ -123,7 +108,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//creating-chamfered-circle/</loc>
+      <loc>http://topologyguides.com//creating-chamfered-circle/</loc>
       
         <lastmod>2017-01-15T18:19:16-05:00</lastmod>
       
@@ -138,7 +123,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//modeling-grip-ridges/</loc>
+      <loc>http://topologyguides.com//modeling-grip-ridges/</loc>
       
         <lastmod>2016-11-27T14:52:47-05:00</lastmod>
       
@@ -153,7 +138,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//circular-holes-curved-surfaces/</loc>
+      <loc>http://topologyguides.com//circular-holes-curved-surfaces/</loc>
       
         <lastmod>2016-11-08T13:58:26-05:00</lastmod>
       
@@ -168,7 +153,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//retopologize-3d-scans/</loc>
+      <loc>http://topologyguides.com//retopologize-3d-scans/</loc>
       
         <lastmod>2016-04-20T15:10:43-04:00</lastmod>
       
@@ -183,7 +168,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//cutting-custom-shapes/</loc>
+      <loc>http://topologyguides.com//cutting-custom-shapes/</loc>
       
         <lastmod>2016-03-04T21:46:00-05:00</lastmod>
       
@@ -198,7 +183,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//classic-shape/</loc>
+      <loc>http://topologyguides.com//classic-shape/</loc>
       
         <lastmod>2015-11-19T08:58:58-05:00</lastmod>
       
@@ -213,7 +198,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//square-panel-lines/</loc>
+      <loc>http://topologyguides.com//square-panel-lines/</loc>
       
         <lastmod>2015-09-30T18:53:14-04:00</lastmod>
       
@@ -228,7 +213,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//redirecting-edge-flows/</loc>
+      <loc>http://topologyguides.com//redirecting-edge-flows/</loc>
       
         <lastmod>2015-09-24T11:40:49-04:00</lastmod>
       
@@ -243,7 +228,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//6-tips-for-subdivision-modeling/</loc>
+      <loc>http://topologyguides.com//6-tips-for-subdivision-modeling/</loc>
       
         <lastmod>2015-08-23T17:47:30-04:00</lastmod>
       
@@ -258,7 +243,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//sub-d-corner-types/</loc>
+      <loc>http://topologyguides.com//sub-d-corner-types/</loc>
       
         <lastmod>2015-08-11T10:34:07-04:00</lastmod>
       
@@ -273,7 +258,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//spiral-quads-and/</loc>
+      <loc>http://topologyguides.com//spiral-quads-and/</loc>
       
         <lastmod>2015-08-01T12:58:31-04:00</lastmod>
       
@@ -288,7 +273,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//modeling-a-t-joint-pipe/</loc>
+      <loc>http://topologyguides.com//modeling-a-t-joint-pipe/</loc>
       
         <lastmod>2015-07-30T11:09:20-04:00</lastmod>
       
@@ -303,7 +288,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//creating-curved-corner-edge-flows/</loc>
+      <loc>http://topologyguides.com//creating-curved-corner-edge-flows/</loc>
       
         <lastmod>2015-07-19T17:49:27-04:00</lastmod>
       
@@ -318,7 +303,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//types-of-edge-bevels/</loc>
+      <loc>http://topologyguides.com//types-of-edge-bevels/</loc>
       
         <lastmod>2015-07-16T11:35:41-04:00</lastmod>
       
@@ -333,7 +318,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//another-short-tutorial/</loc>
+      <loc>http://topologyguides.com//another-short-tutorial/</loc>
       
         <lastmod>2015-07-15T12:20:42-04:00</lastmod>
       
@@ -348,7 +333,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//rounded-cylinder-caps/</loc>
+      <loc>http://topologyguides.com//rounded-cylinder-caps/</loc>
       
         <lastmod>2015-07-14T23:03:31-04:00</lastmod>
       
@@ -363,7 +348,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//types-of-cylinder-caps/</loc>
+      <loc>http://topologyguides.com//types-of-cylinder-caps/</loc>
       
         <lastmod>2015-07-14T22:56:27-04:00</lastmod>
       
@@ -378,7 +363,7 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//adding-holes-to-a-flat-surface/</loc>
+      <loc>http://topologyguides.com//adding-holes-to-a-flat-surface/</loc>
       
         <lastmod>2015-07-14T22:55:07-04:00</lastmod>
       
@@ -396,9 +381,9 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//about/</loc>
+      <loc>http://topologyguides.com//about/</loc>
       
-        <lastmod>2021-12-28T13:26:12-05:00</lastmod>
+        <lastmod>2021-12-28T13:40:07-05:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -411,9 +396,9 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//archive/</loc>
+      <loc>http://topologyguides.com//archive/</loc>
       
-        <lastmod>2021-12-28T13:26:12-05:00</lastmod>
+        <lastmod>2021-12-28T13:40:07-05:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -428,9 +413,9 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//encyclopedia/</loc>
+      <loc>http://topologyguides.com//encyclopedia/</loc>
       
-        <lastmod>2021-12-28T13:26:12-05:00</lastmod>
+        <lastmod>2021-12-28T13:40:07-05:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -445,9 +430,9 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//</loc>
+      <loc>http://topologyguides.com//</loc>
       
-        <lastmod>2021-12-28T13:26:12-05:00</lastmod>
+        <lastmod>2021-12-28T13:40:07-05:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -466,9 +451,9 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//page-2/</loc>
+      <loc>http://topologyguides.com//page-2/</loc>
       
-        <lastmod>2021-12-28T13:26:12-05:00</lastmod>
+        <lastmod>2021-12-28T13:40:07-05:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -481,9 +466,9 @@
   
     
     <url>
-      <loc>http://beta.topologyguides.com//page-3/</loc>
+      <loc>http://topologyguides.com//page-3/</loc>
       
-        <lastmod>2021-12-28T13:26:12-05:00</lastmod>
+        <lastmod>2021-12-28T13:40:07-05:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
