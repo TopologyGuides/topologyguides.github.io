@@ -1,0 +1,24 @@
+I"�<p>I’m back! At least for now. Today i’m answering a question about cutting circular holes in curved surfaces. I learned this technique from the great <a href="https://www.facebook.com/Kuhn-Industries-345392525548878/">Chris Kuhn</a> a few years ago and have used it ever since.</p>
+
+<h2 id="1">1.</h2>
+
+<p>Start with even quads and an even mesh density.</p>
+
+<h2 id="2">2.</h2>
+
+<p>Add a Circle with an amount of sides relative to the density of the surface.</p>
+
+<h2 id="3">3.</h2>
+
+<p>Add a Shrinkwrap modifier to the circle, and set to project onto the surface area. (Be sure to set the direction and axis of projection.)</p>
+
+<h2 id="4">4.</h2>
+
+<p>Cut necessary areas in surface and merge vertexes along the edge of the hole with the circle. (Be sure to merge to the circle to maintain the circular shape.)</p>
+
+<h2 id="5">5.</h2>
+
+<p>Finish by checking geometry for errors or improper curvature.</p>
+
+<p><img src="/assets/img/155917438770_0.png" alt="" /></p>
+:ET

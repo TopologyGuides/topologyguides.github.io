@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Topology Guides </title>
+<!---->
+<meta name="description" content="Guides for 3d Artists">
+<link rel="canonical" href="http://beta.topologyguides.com//page-2/">
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Blog" />
+<meta name="twitter:description" content="Guides for 3d Artists" />
+<meta name="twitter:image" content="http://beta.topologyguides.com/" />
+<meta name="author" content="">
+<link rel="author" href="">
+<meta property="og:locale" content="">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Blog">
+<meta property="og:description" content="Guides for 3d Artists">
+<meta property="og:url" content="http://beta.topologyguides.com//page-2/">
+<meta property="og:site_name" content="Topology Guides">
+<link rel="stylesheet" href="/assets/vendor/normalize-css/normalize.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="shortcut icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,400italic,700,700italic, Lora:400,400italic">
+<style>
+    html {
+      font-family: "Oswald", "Lora", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    }
+</style>
+   <body>
+       <div class="wrapper" id="blep">
+          <header>
+   <div class="menu">
+     <div class="logo">
+        <a href="/">Topology Guides</a>
+        <br>
+       <h3 style="margin-top: 0em;">Guides for 3d Artists</h3>
+     </div>
+   </div>
+   <div class="social">
+     <div class="nav">
+       <ul>
+         <li><a href="/">home</a>
+         <li><a href="/about">about</a>
+         <li><a href="/encyclopedia">encyclopedia</a>
+         <li><a href="/archive">archive</a>
+       </ul>
+     </div>
+     <ul>
+       <li>
+            <a href="https://github.com/TopologyGuides/topologyguides.github.io" target="_blank" class="smaller">
+              <span class="icon-github"></span>
+            </a>
+       <li>
+            <a href="/feed.xml" target="_blank">
+                <span class="icon-rss_feed"></span>
+            </a>
+       <li>
+            <a href="#" onclick="switchTheme()" title="Switch theme?">
+              <span class="icon-invert_colors" id="theme-switcher"></span>
+            </a>
+     </ul>
+   </div>
+</header>
+<article class="blog">
+ <div class="
+    post-title-container-nohero
+  ">
+     <h1>
+          <a href="/retopologize-3d-scans" title="How to retopologize 3D scans into low poly game assets">How to retopologize 3D scans into low poly game assets</a>
+     </h1>
+     <div class="
+        post-meta-nohero
+      ">
+        <span>20/04/2016</span>
+        <span class="post-meta-link-nohero"><a href="/retopologize-3d-scans">&#9642;</a></span>
+        <span>
+              <a href="/tag/Retopology">#Retopology</a>
+        </span>
+     </div>
+ </div>
+     <p><img src="/assets/img/143124861165_0.jpg" alt="image" />
+
+<p>I recently had the honor of writing a tutorial for the Sketchfab Blog about retopologizing 3d scans. I thought this would relevant to this blog so I’ll share it with you. 
+
+<h2 id="read-the-full-tutorial-here">Read the full tutorial here: </h2>
+
+<p><a href="https://blog.sketchfab.com/retopologise-3d-scans-low-poly-game-assets/">https://blog.sketchfab.com/retopologise-3d-scans-low-poly-game-assets</a>
+
+<p>Here’s a snippet of the article:
+
+<h2 id="what-is-retopology">What is Retopology?</h2>
+
+<p>Retopology is the process of rebuilding your model to reduce polygon count and to allow for UV unwrapping and proper deformation for animation models. Retopology is widely used by digital sculptors to convert their models into usable assets in game or film projects. It can also be used on 3d scans for rapid asset creation. Learning the process is quickly becoming a valuable task as more and more game studios are using 3d scans in their asset pipeline.
+
+<h2 id="instant-meshes-for-retopology">Instant Meshes for Retopology</h2>
+
+<p>For the retopology we’re going to use <a href="https://github.com/wjakob/instant-meshes">Instant Meshes</a>, a free quad-based auto-retopology software recently announced at Siggraph and available for free download. At the moment Instant Meshes supports OBJ, PLY, and ALN formats. By coincidence, the model I’m using is already in OBJ format. But if your model isn’t, there are a number of free converters such as MeshLab or <a href="http://www.greentoken.de/onlineconv/">online apps</a> if you prefer not to download one.
+
+<p><a href="https://blog.sketchfab.com/retopologise-3d-scans-low-poly-game-assets/">Continue Reading</a>
+
+</article>
+ <hr>
+<article class="blog">
+ <div class="
+    post-title-container-nohero
+  ">
+     <h1>
+          <a href="/cutting-custom-shapes" title="Cutting Custom Shapes">Cutting Custom Shapes</a>
+     </h1>
+     <div class="
+        post-meta-nohero
+      ">
+        <span>04/03/2016</span>
+        <span class="post-meta-link-nohero"><a href="/cutting-custom-shapes">&#9642;</a></span>
+        <span>
+              <a href="/tag/blender">#blender</a>
+              <a href="/tag/topology">#topology</a>
+              <a href="/tag/3d">#3d</a>
+              <a href="/tag/holes">#holes</a>
+        </span>
+     </div>
+ </div>
+     <p>Recently, I received a question in regards to cutting a custom hole onto a surface. Instead of addressing a unique situation, I thought I would give some guidelines for cutting holes. So here it goes.
+
+<p><strong>The Shape</strong>
+
+<p>Start by modeling the shape you would like to cut, make it as minimal in vertices as possible. Then place it onto the area you would like to cut it onto.
+
+<p><strong>Basic Form</strong>
+
+<p>Delete the major areas needed to make the hole. Again, be minimal in what you delete, only what is necessary.
+
+<p><strong>Shaping the Hole</strong>
+
+<p>Shape the vertices to fit around the shape. Don’t move them in too close, make sure there will be room for an edge loop with faces that are consistent in size with the rest of the mesh.
+
+<p><strong>Counting the Loops</strong>
+
+<p>Count the vertices around the hole and the shape. Most likely they are uneven. If so, add and remove loops from both the shape and the rest of the mesh. This will be difficult, it may require you to retopologize parts of the mesh in order to make match.
+
+<p><strong>Filling the Gap</strong>
+
+<p>Start filling the faces in. Rearrange the varices to make sure the faces are even is size as much as possible.
+
+<p><strong>Mesh Check</strong>
+
+<p>After you’re done, check over the model to make sure you didn’t mess up other parts of the model while deleting or adding edge loops. Especially if you’re doing sub-d modeling.
+
+<p><img src="/assets/img/140479921825_0.png" alt="" />
+
+</article>
+ <hr>
+<article class="blog">
+ <div class="
+    post-title-container-nohero
+  ">
+     <h1>
+          <a href="/classic-shape" title="Modeling a Revolver Cylinder">Modeling a Revolver Cylinder</a>
+     </h1>
+     <div class="
+        post-meta-nohero
+      ">
+        <span>19/11/2015</span>
+        <span class="post-meta-link-nohero"><a href="/classic-shape">&#9642;</a></span>
+        <span>
+              <a href="/tag/b3d">#b3d</a>
+              <a href="/tag/3d modeling">#3d modeling</a>
+              <a href="/tag/guide">#guide</a>
+              <a href="/tag/topology">#topology</a>
+        </span>
+     </div>
+ </div>
+     <p><img src="/assets/img/133528602155.png" alt="" />
+
+<p>A simple method of modeling a classic shape.
+
+</article>
+ <hr>
+<article class="blog">
+ <div class="
+    post-title-container-nohero
+  ">
+     <h1>
+          <a href="/square-panel-lines" title="Creating Square Panel Lines">Creating Square Panel Lines</a>
+     </h1>
+     <div class="
+        post-meta-nohero
+      ">
+        <span>30/09/2015</span>
+        <span class="post-meta-link-nohero"><a href="/square-panel-lines">&#9642;</a></span>
+        <span>
+              <a href="/tag/3D Modelling">#3D Modelling</a>
+              <a href="/tag/guide">#guide</a>
+              <a href="/tag/b3d">#b3d</a>
+              <a href="/tag/3ds max">#3ds max</a>
+        </span>
+     </div>
+ </div>
+     <p><img src="/assets/img/130229522785.png" alt="" />
+
+<p>A fast method for creating square panel lines.
+
+</article>
+ <hr>
+<article class="blog">
+ <div class="
+    post-title-container-nohero
+  ">
+     <h1>
+          <a href="/redirecting-edge-flows" title="Redirecting Edge flows">Redirecting Edge flows</a>
+     </h1>
+     <div class="
+        post-meta-nohero
+      ">
+        <span>24/09/2015</span>
+        <span class="post-meta-link-nohero"><a href="/redirecting-edge-flows">&#9642;</a></span>
+        <span>
+              <a href="/tag/3d modeling">#3d modeling</a>
+              <a href="/tag/guide">#guide</a>
+              <a href="/tag/b3d">#b3d</a>
+        </span>
+     </div>
+ </div>
+     <p><img src="/assets/img/129783341675.png" alt="image" />
+
+<p>Redirecting edge flows within a mesh.
+
+</article>
+ <hr>
+<article class="blog">
+ <div class="
+    post-title-container-nohero
+  ">
+     <h1>
+          <a href="/6-tips-for-subdivision-modeling" title="6 tips for Subdivision Modeling">6 tips for Subdivision Modeling</a>
+     </h1>
+     <div class="
+        post-meta-nohero
+      ">
+        <span>23/08/2015</span>
+        <span class="post-meta-link-nohero"><a href="/6-tips-for-subdivision-modeling">&#9642;</a></span>
+        <span>
+              <a href="/tag/article">#article</a>
+              <a href="/tag/3D Modelling">#3D Modelling</a>
+              <a href="/tag/tips">#tips</a>
+        </span>
+     </div>
+ </div>
+     <p>Here’s a few tips to keep in mind when Sub-d modeling. I hope you like this written format. If not, let me know.
+
+<h2 id="1-always-start-with-an-accurate-blocking">1. Always start with an accurate Blocking</h2>
+
+<p>Blocking is one of the most important stages of modeling. It’s where you define the scale, style, and look of your model. That’s why you should always start with an accurate base shape. Because once you start adding lots of details and holding edges it’s hard to change a shape without getting a big headache.
+
+<h2 id="2-use-as-few-polygons-as-possible">2. Use as few Polygons as possible</h2>
+
+<p>When sub-d modeling you don’t need to worry about keeping curved surfaces smooth because once you apply a few levels of sub-surf (subdivision surface) you won’t be able to see how “low poly” your model really is. Why should you use a 32 sided cylinder if you can use a 6 sided one and apply some non-destructive sub-surf instead? So keep your models as simple as possible. If a polygon doesn’t perform a specific task, then most likely it should be deleted.
+
+<h2 id="3-tris-and-n-gons-arent-always-bad">3. Tris and N-gons aren’t always Bad</h2>
+
+<p>Tris and n-gons have a pretty hideous reputation of ruining topology, but if used in the right circumstances, they can be useful. And in the end, they will be turned into quads anyways. Don’t take this as a green light to use non-quads all you want, but don’t freak out if you have one or two that aren’t ruining your topology flows.
+
+<h2 id="4-keep-your-quads-square">4. Keep your Quads Square</h2>
+
+<p>I know you’ve probably heard this one a zillion times. But I still see lots of models with very rectangular quads. This is one of the most basic things you can do to your model to improve it. Keeping your quads square will help keep your model looking even and smooth. As well as helping other tasks like UV mapping.
+
+<h2 id="5-model-using-modifiers">5. Model using Modifiers</h2>
+
+<p>Modifiers are non-destructive. Meaning you can turn their effects on or off at any point in your modeling process. Different 3d modeling apps have different tools. But whichever app you’re using, find out which modifiers could help you when modeling. They can save hours of work.
+
+<h2 id="6-creases-for-small-or-distant-objects">6. Creases for small or distant Objects</h2>
+
+<p>Instead of adding holding edges to keep your corners sharp, crease your edge instead. It will keep your polygon count down and will look perfectly adequate for small or distant objects.
+
+</article>
+ <hr>
+<article class="blog">
+ <div class="
+    post-title-container-nohero
+  ">
+     <h1>
+          <a href="/sub-d-corner-types" title="Sub-D Corner Types">Sub-D Corner Types</a>
+     </h1>
+     <div class="
+        post-meta-nohero
+      ">
+        <span>11/08/2015</span>
+        <span class="post-meta-link-nohero"><a href="/sub-d-corner-types">&#9642;</a></span>
+        <span>
+              <a href="/tag/3D Modelling">#3D Modelling</a>
+              <a href="/tag/topology">#topology</a>
+              <a href="/tag/corners">#corners</a>
+              <a href="/tag/sub-d">#sub-d</a>
+        </span>
+     </div>
+ </div>
+     <p><img src="/assets/img/126426510380.png" alt="" />
+
+<p>Sub-d corner types.
+
+</article>
+ <hr>
+<article class="blog">
+ <div class="
+    post-title-container-nohero
+  ">
+     <h1>
+          <a href="/spiral-quads-and" title="Modeling a Thumb Screw top">Modeling a Thumb Screw top</a>
+     </h1>
+     <div class="
+        post-meta-nohero
+      ">
+        <span>01/08/2015</span>
+        <span class="post-meta-link-nohero"><a href="/spiral-quads-and">&#9642;</a></span>
+        <span>
+              <a href="/tag/tutorial">#tutorial</a>
+              <a href="/tag/3d modelling">#3d modelling</a>
+              <a href="/tag/blender">#blender</a>
+              <a href="/tag/b3d">#b3d</a>
+        </span>
+     </div>
+ </div>
+     <p><img src="/assets/img/125604907490.png" alt="" />
+
+<p>Here’s a short tutorial on making spiral quads and poking faces. Sorry Autodesk users, this one only works in Blender.
+
+</article>
+ <hr>
+<article class="blog">
+ <div class="
+    post-title-container-nohero
+  ">
+     <h1>
+          <a href="/modeling-a-t-joint-pipe" title="Modeling a T-joint Pipe">Modeling a T-joint Pipe</a>
+     </h1>
+     <div class="
+        post-meta-nohero
+      ">
+        <span>30/07/2015</span>
+        <span class="post-meta-link-nohero"><a href="/modeling-a-t-joint-pipe">&#9642;</a></span>
+        <span>
+              <a href="/tag/tutorial">#tutorial</a>
+              <a href="/tag/guide">#guide</a>
+              <a href="/tag/3d modelling">#3d modelling</a>
+              <a href="/tag/b3d">#b3d</a>
+              <a href="/tag/3dsmax">#3dsmax</a>
+        </span>
+     </div>
+ </div>
+     <p><img src="/assets/img/125433745815.png" alt="" />
+
+<p>Modeling a t-joint pipe.
+
+</article>
+ <hr>
+<article class="blog">
+ <div class="
+    post-title-container-nohero
+  ">
+     <h1>
+          <a href="/creating-curved-corner-edge-flows" title="Creating Curved Corner Edge Flows">Creating Curved Corner Edge Flows</a>
+     </h1>
+     <div class="
+        post-meta-nohero
+      ">
+        <span>19/07/2015</span>
+        <span class="post-meta-link-nohero"><a href="/creating-curved-corner-edge-flows">&#9642;</a></span>
+        <span>
+              <a href="/tag/3d modelling">#3d modelling</a>
+              <a href="/tag/b3d">#b3d</a>
+              <a href="/tag/topology">#topology</a>
+        </span>
+     </div>
+ </div>
+     <p><img src="/assets/img/124518292985.png" alt="" />
+
+<p>Creating curved corner edge flows.
+
+</article>
+<nav class="pagination" role="navigation">
+<hr/>
+ <ul>
+   <li class="pagination-item-prev" >
+            <a rel="prev" href="/">&laquo; Previous</a>
+   <li class="pagination-item-next" >
+      <a rel="next" href="/page-3/">Next &raquo;</a>
+ </ul>
+<hr/>
+</nav>
+            <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us10.list-manage.com","uuid":"377f8cb02163f375b3f03fcfb","lid":"ceb49c397a","uniqueMethods":true}) })</script>
+
+           <footer>
+    <span>Guides for 3d Artists</span>
+    <span>written by Johnson Martin</span>
+</footer>
+       </div>
+<script type="text/javascript" src="/assets/js/theme.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-46758601-3', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
