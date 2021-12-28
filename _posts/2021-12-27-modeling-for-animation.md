@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Modeling with Animation in Mind
-date: '2022-01-01T01:52:58-04:00'
+date: '2021-12-27T01:52:58-04:00'
 tags:
 - 3d modeling
 - organic
@@ -9,12 +9,11 @@ tags:
 - 3d
 - blender
 - b3d
-- animation
 ---
 
-You just sculpted a new character concept, retoplogized it, and added an armature...but then you move a bone and realize that your topology just doesn't work as you'd hoped it would. Organic, stretching surfaces such as skin require carefully crafted toplogy that deforms well in a wide range of poses. Accounting for this varaiblityu is not an easy task, especially if you're not skilled in animation or use to working with charactors.
+You just sculpted a new character concept, retoplogized it, and added an armature...but then you move a bone and realize that your topology just doesn't work as you'd hoped it would. Organic, stretching surfaces such as skin require carefully crafted topology that deforms well in a wide range of poses. Accounting for this variability is not an easy task, especially if you're not skilled in animation or use to working with characters.
 
-So, with this in mind, I've prepared a few tips from my own experinces ofmodeling for animation. With some practice, your topology may be able to work just as well when animated as it does when in a T-pose.
+So, with this in mind, I've prepared a few tips from my own experiences of modeling for animation. With some practice, your topology may be able to work just as well when animated as it does when in a T-pose.
 
 ### Align Faces with the Axis of Rotation
 
@@ -28,7 +27,7 @@ Keeping faces flat is the basis of why topology is important in the first place.
 
 ![horse](assets/img/horse.png)
 
-Another tip for organic models is to follow the muscle structures of the deformation point you are modeling. If your topology roughly matches the underlying muscle structure, in most cases the animated model will push and pull vertices along the the same axis of the muscles.
+Another tip for organic models is to follow the muscle structures of the deformation point you are modeling. If your topology roughly matches the underlying muscle structure, in most cases the animated model will push and pull vertices along the same axis of the muscles.
 
 ### Move Problems To Reduce Artifacts
 
@@ -58,7 +57,7 @@ Look how the density above increases in the knee and ankle. This ensures that wh
 
 <br>
 
-Have any tips of your own? LEave the in the comments below! Also, If you enjoyed this post, please consider supporting the site on Patreon to help pay for some of the costs of running the website!
+Have any tips of your own? Leave them in the comments below! Also, If you enjoyed this post, please consider supporting the site on Patreon to help pay for some of the costs of running the website!
 
 <br>
 
