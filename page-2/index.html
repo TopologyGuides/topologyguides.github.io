@@ -69,6 +69,52 @@
     post-title-container-nohero
   ">
      <h1>
+          <a href="/circular-holes-curved-surfaces" title="Cutting Circular Holes in Curved Surfaces">Cutting Circular Holes in Curved Surfaces</a>
+     </h1>
+     <div class="
+        post-meta-nohero
+      ">
+        <span>08/11/2016</span>
+        <span class="post-meta-link-nohero"><a href="/circular-holes-curved-surfaces">&#9642;</a></span>
+        <span>
+              <a href="/tag/blender">#blender</a>
+              <a href="/tag/b3d">#b3d</a>
+              <a href="/tag/topology">#topology</a>
+              <a href="/tag/guide">#guide</a>
+        </span>
+     </div>
+ </div>
+     <p>I’m back! At least for now. Today i’m answering a question about cutting circular holes in curved surfaces. I learned this technique from the great <a href="https://www.facebook.com/Kuhn-Industries-345392525548878/">Chris Kuhn</a> a few years ago and have used it ever since.
+
+<h2 id="1">1.</h2>
+
+<p>Start with even quads and an even mesh density.
+
+<h2 id="2">2.</h2>
+
+<p>Add a Circle with an amount of sides relative to the density of the surface.
+
+<h2 id="3">3.</h2>
+
+<p>Add a Shrinkwrap modifier to the circle, and set to project onto the surface area. (Be sure to set the direction and axis of projection.)
+
+<h2 id="4">4.</h2>
+
+<p>Cut necessary areas in surface and merge vertexes along the edge of the hole with the circle. (Be sure to merge to the circle to maintain the circular shape.)
+
+<h2 id="5">5.</h2>
+
+<p>Finish by checking geometry for errors or improper curvature.
+
+<p><img src="/assets/img/155917438770_0.png" alt="" />
+
+</article>
+ <hr>
+<article class="blog">
+ <div class="
+    post-title-container-nohero
+  ">
+     <h1>
           <a href="/retopologize-3d-scans" title="How to retopologize 3D scans into low poly game assets">How to retopologize 3D scans into low poly game assets</a>
      </h1>
      <div class="
@@ -355,31 +401,6 @@
 <p>Modeling a t-joint pipe.
 
 </article>
- <hr>
-<article class="blog">
- <div class="
-    post-title-container-nohero
-  ">
-     <h1>
-          <a href="/creating-curved-corner-edge-flows" title="Creating Curved Corner Edge Flows">Creating Curved Corner Edge Flows</a>
-     </h1>
-     <div class="
-        post-meta-nohero
-      ">
-        <span>19/07/2015</span>
-        <span class="post-meta-link-nohero"><a href="/creating-curved-corner-edge-flows">&#9642;</a></span>
-        <span>
-              <a href="/tag/3d modelling">#3d modelling</a>
-              <a href="/tag/b3d">#b3d</a>
-              <a href="/tag/topology">#topology</a>
-        </span>
-     </div>
- </div>
-     <p><img src="/assets/img/124518292985.png" alt="" />
-
-<p>Creating curved corner edge flows.
-
-</article>
 <nav class="pagination" role="navigation">
 <hr/>
  <ul>
@@ -391,7 +412,6 @@
 <hr/>
 </nav>
             <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us10.list-manage.com","uuid":"377f8cb02163f375b3f03fcfb","lid":"ceb49c397a","uniqueMethods":true}) })</script>
-
            <footer>
     <span>Guides for 3d Artists</span>
     <span>written by Johnson Martin</span>
