@@ -18,6 +18,10 @@ body {
     background-color: var(--bg-color);
 }
 
+p {
+  font-family: 'Lora', serif;
+}
+
 .page {
       margin-bottom: 8em;
       }
@@ -47,6 +51,10 @@ a, .a {
     strong {
       color: inherit;
     }
+}
+
+.page a {
+  text-decoration: underline;
 }
 
 // Headings

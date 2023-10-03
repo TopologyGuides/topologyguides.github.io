@@ -5,55 +5,54 @@
     <description>Guides for 3d Artists</description>
     <link>http://topologyguides.com//</link>
     <atom:link href="http://topologyguides.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Dec 2021 14:11:03 -0500</pubDate>
-    <lastBuildDate>Tue, 28 Dec 2021 14:11:03 -0500</lastBuildDate>
-    <generator>Jekyll v4.2.1</generator>
+    <pubDate>Tue, 03 Oct 2023 12:54:04 -0400</pubDate>
+    <lastBuildDate>Tue, 03 Oct 2023 12:54:04 -0400</lastBuildDate>
+    <generator>Jekyll v4.3.2</generator>
     
       <item>
         <title>Modeling with Animation in Mind</title>
-        <description>&lt;p&gt;You just sculpted a new character concept, retoplogized it, and added an armature…but then you move a bone and realize that your topology just doesn’t work as you’d hoped it would. Organic, stretching surfaces such as skin require carefully crafted topology that deforms well in a wide range of poses. Accounting for this variability is not an easy task, especially if you’re not skilled in animation or use to working with characters.&lt;/p&gt;
+        <description>&lt;p&gt;You just sculpted a new character concept, retopologized it, and added an armature…but then you move a bone and realize that your topology just doesn’t work as you’d hoped it would. Organic, stretching surfaces such as skin require carefully crafted topology that deforms well in a wide range of poses. Accounting for this variability is not an easy task, especially if you’re not skilled in animation or used to working with characters.&lt;/p&gt;
 
 &lt;p&gt;So, with this in mind, I’ve prepared a few tips from my own experiences of modeling for animation. With some practice, your topology may be able to work just as well when animated as it does when in a T-pose.&lt;/p&gt;
 
 &lt;h3 id=&quot;align-faces-with-the-axis-of-rotation&quot;&gt;Align Faces with the Axis of Rotation&lt;/h3&gt;
 
-&lt;p&gt;First up, face alignment. Aligning edge loops to the axis of animation can prevent faces from distorting and causing unwanted shading artifacts by ensuring that faces stay flat, even in extreme poses.  In most cases, your topology will naturally align to these axis of animation. For example, an elbow will naturally have edge loops that flow in the same axis as movement. But paying special attention to how your loops flow can help in some tricky situations.&lt;/p&gt;
+&lt;p&gt;First up, face alignment. Aligning edge loops to the axis of animation can prevent faces from distorting and causing unwanted shading artifacts by ensuring that faces stay flat, even in extreme poses. In most cases, your topology will naturally align to the axis of animation. For example, an elbow will naturally have edge loops that flow in the same axis as movement. But paying special attention to how your loops flow can help in some tricky situations.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;assets/img/deform_example.gif&quot; alt=&quot;deform_example&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Notice how the faces become non-planar (flat) when they are deformed against the flow of the edge loops. At render, these kinds of faces are split into tringles that create an odd ribbed pattern countering the animator’s intent.&lt;/p&gt;
+&lt;p&gt;Notice how the faces become non-planar (flat) when they are deformed against the flow of the edge loops. At render, these faces are split into triangles that create an odd ribbed pattern countering the animator’s intent.&lt;/p&gt;
 
-&lt;p&gt;Keeping faces flat is the basis of why topology is important in the first place. This is why good  topology in game models is less vital (triangles are almost always flat!), and using n-gons ion modeling can be problematic. The more points you have to work with on a face, the more likely it is that you will have a non-planar surface.&lt;/p&gt;
+&lt;p&gt;Keeping faces flat is the basis of why topology is important in the first place. This is why good topology in-game models is less vital (triangles are almost always flat!), and using n-gons ion modeling can be problematic. The more points you have to work with on a face, the more likely it is that you will have a non-planar surface.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;assets/img/horse.png&quot; alt=&quot;horse&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Another tip for organic models is to follow the muscle structures of the deformation point you are modeling. If your topology roughly matches the underlying muscle structure, in most cases the animated model will push and pull vertices along the same axis of the muscles.&lt;/p&gt;
+&lt;p&gt;Another tip for organic models is to follow the muscle structures of the deformation point you are modeling. If your topology roughly matches the underlying muscle structure, in most cases, the animated model will push and pull vertices along the same axis of the muscles.&lt;/p&gt;
 
 &lt;h3 id=&quot;move-problems-to-reduce-artifacts&quot;&gt;Move Problems To Reduce Artifacts&lt;/h3&gt;
 
-&lt;p&gt;Even the best models have areas that don’t deform well. Sometimes the key to solving these issues isn’t to eliminate them, but to move them. For example, 5+ edge poles are not possible to eliminate completely from a complex model but moving them can help significantly reduce the problems poles cause. By the way, you can read more about moving edge poles in our article “&lt;a href=&quot;https://topologyguides.com/manipulating-edge-poles&quot;&gt;Moving and Manipulating Edge Poles&lt;/a&gt;”&lt;/p&gt;
+&lt;p&gt;Even the best models have areas that don’t deform well. Sometimes, the key to solving these issues isn’t eliminating them but moving them. For example, 5+ edge poles cannot be completely eliminated from a complex model, but moving them can help significantly reduce the problems poles cause. By the way, you can read more about moving edge poles in our article “&lt;a href=&quot;https://topologyguides.com/manipulating-edge-poles&quot;&gt;Moving and Manipulating Edge Poles&lt;/a&gt;”&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;assets/img/pole_example.png&quot; alt=&quot;pole_example&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Moving problem topology to areas with less deformation can make issues irrelevant in practical use. Moving an n-gon to a flat surface of your model can make it practically invisible in your final animation. See above how the edge pole is not in the corner of the shark fin? Instead of placing the pole where it natrually would be, the pole is moved out towards a neutral position where it will not interfere with the movement of the fin.&lt;/p&gt;
+&lt;p&gt;Moving problem topology to areas with less deformation can make issues irrelevant in practical use. Moving an n-gon to a flat surface of your model can make it practically invisible in your final animation. See above how the edge pole is not in the corner of the shark fin? Instead of placing the pole where it naturally would be, the pole is moved out towards a neutral position where it will not interfere with the movement of the fin.&lt;/p&gt;
 
 &lt;h3 id=&quot;extend-loops-around-the-insertion-point&quot;&gt;Extend Loops around the Insertion Point&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&quot;assets/img/loop_example.png&quot; alt=&quot;loop_example&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Using extra edge loops in areas with heavy deformation is the easiest way to prepare your model for rigging/animation. In transition areas and in the muscle insertion points, extending loops past the deformation area into the flat surface of your model can allow joints to deform more naturally and be much easier to weight in rigging. In the case above, the turtle’s fin can now rotate to extreme angles without issues because of the extra loops. Pairing this with moving poles towards flat surfaces can solve lots of deformation problems.&lt;/p&gt;
+&lt;p&gt;Using extra edge loops in areas with heavy deformation is the easiest way to prepare your model for rigging/animation. In transition areas and muscle insertion points, extending loops past the deformation area into the flat surface of your model can allow joints to deform more naturally and be much easier to weight in rigging. In the case above, the turtle’s fin can now rotate to extreme angles without issues because of the extra loops. Pairing this with moving poles towards flat surfaces can solve many deformation problems.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;assets/img/outset_example.gif&quot; alt=&quot;outset_example&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In Blender, you can easily create extra loops around the insertion point of a deformation point by using the outset tool. Select a face loop and press “I” then “O” to create a ring of faces outside the selected faces.&lt;/p&gt;
 
 &lt;h3 id=&quot;match-density-with-movement-areas&quot;&gt;Match Density with Movement Areas&lt;/h3&gt;
-
-&lt;p&gt;If polygon counts are an issue, modeling deforming areas of your model (e.g. a character model’s face) with a higher density than non-deforming areas can help to reduce polygon counts without sacrificing good topology. For example, you can add density to a your model’s key features and terminate edge loops before less key areas using &lt;a href=&quot;https://topologyguides.com/loop-reduction&quot;&gt;edge loop reduction techniques&lt;/a&gt;. While modeling with even mesh density can be a virtue, varying mesh density can be a lifesaver when working on heavy models.&lt;/p&gt;
+&lt;p&gt;If polygon counts are an issue, modeling deforming areas of your model (e.g., a character model’s face) with a higher density than non-deforming areas can help to reduce polygon counts without sacrificing good topology. For example, using &lt;a href=&quot;https://topologyguides.com/loop-reduction&quot;&gt;edge loop reduction techniques&lt;/a&gt;, you can add density to your model’s key features and terminate edge loops before less key areas. While modeling with even mesh density can be a virtue, varying mesh density can be a lifesaver when working on heavy models.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;assets/img/scale_example.png&quot; alt=&quot;scale_example&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Look how the density above increases in the knee and ankle. This ensures that when the leg bends there isn’t excessive stretching or artifacting.&lt;/p&gt;
+&lt;p&gt;Look how the density above increases in the knee and ankle. This ensures that when the leg bends, there isn’t excessive stretching or artifacting.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
