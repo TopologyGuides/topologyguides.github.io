@@ -4,24 +4,24 @@
        <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-<title>Modeling Bevel Width Transitions &#9642; Topology Guides</title>
+<title>Modeling a Human Foot &#9642; Topology Guides</title>
 <!--
-<meta name="description" content="For some models, creating bevels is a simple as adding a bevel modifer. But for other models, more complex methods are needed. One of these methods is creating transitions between two bevel widths. Be it a car dashboard or a piece of furniture, bevel transitions are everywhere. This short guide...">
+<meta name="description" content="Next up in our ongoing human topology series, the human foot! This guide looks at the basics of modeling a human foot while keeping anatomy and good topology in mind. Identifying Forms The human foot is deceitfully simple. At rest, the major forms of the foot may seem unimportant, but...">
 -->
 <meta name="description" content="Guides for 3d Artists">
-<meta name="keywords" content="3d modeling, model, topology, 3d, blender, b3d">
-<link rel="canonical" href="http://topologyguides.com/bevel-width-transitions">
+<meta name="keywords" content="3d modeling, organic, topology, 3d, blender, b3d, anatomy">
+<link rel="canonical" href="http://topologyguides.com/human-foot">
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Modeling Bevel Width Transitions" />
+<meta name="twitter:title" content="Modeling a Human Foot" />
 <meta name="twitter:description" content="Guides for 3d Artists" />
 <meta name="twitter:image" content="http://topologyguides.com" />
 <meta name="author" content="">
 <link rel="author" href="">
 <meta property="og:locale" content="">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Modeling Bevel Width Transitions">
+<meta property="og:title" content="Modeling a Human Foot">
 <meta property="og:description" content="Guides for 3d Artists">
-<meta property="og:url" content="http://topologyguides.com/bevel-width-transitions">
+<meta property="og:url" content="http://topologyguides.com/human-foot">
 <meta property="og:site_name" content="Topology Guides">
 <link rel="stylesheet" href="/assets/vendor/normalize-css/normalize.css">
 <link rel="stylesheet" href="/assets/css/main.css">
@@ -74,44 +74,56 @@
     <!--Post hero image source-->
    <div class="heading-container ">
      <h1>
-          Modeling Bevel Width Transitions
+          Modeling a Human Foot
      </h1>
      <div class="post-meta">
-        <span>14/05/2020</span>
+        <span>28/11/2023</span>
         <span>
               <a href="/tag/3d modeling">#3d modeling</a>
-              <a href="/tag/model">#model</a>
+              <a href="/tag/organic">#organic</a>
               <a href="/tag/topology">#topology</a>
               <a href="/tag/3d">#3d</a>
               <a href="/tag/blender">#blender</a>
               <a href="/tag/b3d">#b3d</a>
+              <a href="/tag/anatomy">#anatomy</a>
         </span>
      </div>
    </div>
  </div>
-   <p>For some models, creating bevels is a simple as adding a bevel modifer. But for other models, more complex methods are needed. One of these methods is creating transitions between two bevel widths. Be it a car dashboard or a piece of furniture, bevel transitions are everywhere. This short guide will show you the most optimal ways to create transitions between bevel widths.
+   <p>Next up in our ongoing human topology series, the human foot! This guide looks at the basics of modeling a human foot while keeping anatomy and good topology in mind.
 
-<h2 id="method-1---quick--dirty">Method #1 - Quick &amp; Dirty</h2>
-<p><img src="/assets/img/618124624591536128_0.png" alt="image" />
+<h3 id="identifying-forms">Identifying Forms</h3>
+<p><img src="assets/img/foot_anatomy.webp" alt="foot_anatomy.webp" />
 
-<p>First, the quick and dirty method. If you’re in a pinch or if you’re modeling something that’s unlikely to be viewed close up, this is the method to use. This method involves using edge ceases to sharpen at variable levels. In this example, the sharp edge has a crease of 1.00 and the wider bevel has a crease of 0.00. To adjust the crease of an edge in Blender, use SHIFT-E.
+<p>The human foot is deceitfully simple. At rest, the major forms of the foot may seem unimportant, but when the foot deforms, vital forms start appearing everywhere! Because of this, the bones, muscles, tendons, and ligaments of the foot should all be factors when building a 3d foot.
 
-<h2 id="method-2---smooth-bevels">Method #2 - Smooth Bevels</h2>
-<p><img src="/assets/img/618124624591536128_1.png" alt="image" />
+<p>Starting from the top, the bony bumps on each side of the ankle joint (the medial Malleolus and posterior Malleolus) are vital forms when considering topology. The ankle joint is a major area of deformation. If we do not account for these two areas in our topology, the bony protrusions could collapse when deformed rather than staying in place.
 
-<p>This method is a bit more complex and involves using the bevel tool (CTRL-B) to separately bevel each bevel width then combining the two bevels by cleaning up the merge point in step three. This method also using holding edges instead of edge creasing to have more control over the bevel profile.
+<p>Next, the tendons across the top (and bottom) of the foot (extensor and flexor digitorum brevis) are important for representiung the movment of the foot when toes move. These tendons can deform the entire top surface of the foot along its length when the toes move.
 
-<p>Using this type of transition is perfect for important bevel transitions and high-poly modeling where model density is less restricted.
+<p>Lastly, and most obviously, the bones of the toes, heal (calcaneus), and lower leg form the main shape of the foot. After all, most feet are quite bony looking! Knowing where the bones of the foot are is important for developing the general shape of the foot and for seeing all the possible ways the foot can deform.
 
-<h2 id="method-3---sharp-bevels">Method #3 - Sharp Bevels</h2>
-<p><img src="/assets/img/618124624591536128_2.png" alt="image" />
+<h3 id="placing-edge-loops">Placing Edge Loops</h3>
+<p>It’s time to build a model! If you already have a sculpt, you can use the sculpt as a base for how to shape edge loops. Otherwise, be prepared to tweak and adjust topology as you look at reference images.The key to a strong model is constant refinement using reference images in a variety of poses.
 
-<p>This last method is for sharp chamfered bevels. Using creases and single segment bevels, it’s easy to create very clean transition points. The important step here is to merge the extra vertices in step four to restore the edge flow.
+<p><img src="assets/img/foot_edge_loops.webp" alt="Foot Edge Loops" />
 
-<p>That concludes this brief intro to variable bevels! If this guide was useful to you, then please consider sharing it or contributing to the project’s <a href="https://www.patreon.com/johnson">Patreon page</a>.
+<p>The first loops you’ll want to make are the green and yellow loops. These form the main topology in each axis that the rest of the model will connect to. Once those loops are in place, the blue loops help form the details like the ankle and toes.
 
-<p><a href="https://www.patreon.com/bePatron?u=4389823" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async="" src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+<h3 id="loop-reductions---poles">Loop Reductions &amp;  Poles</h3>
+<p>With all of the key edge loops placed, we need to work on reducing the number of loops coming fro mthe toe area towards the ankle. Reducing the number of loops is necessary so that we don’t end up with overly dense topology at the ankle and legs where such high density topology isn’t needed. Ideally, we want 16 or 24 loops at the top of the ankle so that the topology fits with the rest of a full character model.
 
+<p><img src="assets/img/foot_poles.webp" alt="Foot Edge Poles" />
+
+<p>To do this, we can use <a href="https://topologyguides.com/loop-reduction"> edge loop reduction flows</a> to cut down the number of edge loops as we move away from the toes. As you can see from the image above, these transitions mainly take place on the flat surface area of the foot, rather than directly wear the toes attach. This is so that the edge poles resulting from the loop reductions lay on the flattest part of the model, rather than in a joint area where they could cause shading problems under deformation. The same can also be said of the the E-pole transition near the ankle.
+
+<p><img src="assets/img/foot_topology.webp" alt="Foot Topology" />
+
+<div class="sketchfab-embed-wrapper">
+    <iframe title="A 3D model" width="768" height="420" src="https://sketchfab.com/3d-models/foot-topology-study-4aa96c9b0a9b4cb1b3740f8e0558ffbc/embed?camera=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+<p><br />
+And that wraps up this guide! Have any tips of your own? Leave them in the comments below! Also, If you enjoyed this post, please consider supporting the site by sharing it!
 
 </article>
 <div id="disqus_thread"></div>
@@ -130,11 +142,6 @@
 <h2>Related posts</h2>
 <ul class="related-posts">
    <li>
-    <a href="/human-foot">
-        <span>Modeling a Human Foot</span>
-        <small>28/11</small>
-    </a>
-   <li>
     <a href="/modeling-for-animation">
         <span>Modeling with Animation in Mind</span>
         <small>27/12</small>
@@ -143,6 +150,11 @@
     <a href="/human-hand">
         <span>Modeling a Human Hand</span>
         <small>14/06</small>
+    </a>
+   <li>
+    <a href="/bevel-width-transitions">
+        <span>Modeling Bevel Width Transitions</span>
+        <small>14/05</small>
     </a>
    <li>
     <a href="/manipulating-edge-poles">

@@ -3,11 +3,69 @@
   <channel>
     <title>Topology Guides</title>
     <description>Guides for 3d Artists</description>
-    <link>http://topologyguides.com//</link>
-    <atom:link href="http://topologyguides.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 03 Oct 2023 12:54:04 -0400</pubDate>
-    <lastBuildDate>Tue, 03 Oct 2023 12:54:04 -0400</lastBuildDate>
+    <link>http://topologyguides.com/</link>
+    <atom:link href="http://topologyguides.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 28 Nov 2023 11:18:44 -0500</pubDate>
+    <lastBuildDate>Tue, 28 Nov 2023 11:18:44 -0500</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
+    
+      <item>
+        <title>Modeling a Human Foot</title>
+        <description>&lt;p&gt;Next up in our ongoing human topology series, the human foot! This guide looks at the basics of modeling a human foot while keeping anatomy and good topology in mind.&lt;/p&gt;
+
+&lt;h3 id=&quot;identifying-forms&quot;&gt;Identifying Forms&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;assets/img/foot_anatomy.webp&quot; alt=&quot;foot_anatomy.webp&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The human foot is deceitfully simple. At rest, the major forms of the foot may seem unimportant, but when the foot deforms, vital forms start appearing everywhere! Because of this, the bones, muscles, tendons, and ligaments of the foot should all be factors when building a 3d foot.&lt;/p&gt;
+
+&lt;p&gt;Starting from the top, the bony bumps on each side of the ankle joint (the medial Malleolus and posterior Malleolus) are vital forms when considering topology. The ankle joint is a major area of deformation. If we do not account for these two areas in our topology, the bony protrusions could collapse when deformed rather than staying in place.&lt;/p&gt;
+
+&lt;p&gt;Next, the tendons across the top (and bottom) of the foot (extensor and flexor digitorum brevis) are important for representiung the movment of the foot when toes move. These tendons can deform the entire top surface of the foot along its length when the toes move.&lt;/p&gt;
+
+&lt;p&gt;Lastly, and most obviously, the bones of the toes, heal (calcaneus), and lower leg form the main shape of the foot. After all, most feet are quite bony looking! Knowing where the bones of the foot are is important for developing the general shape of the foot and for seeing all the possible ways the foot can deform.&lt;/p&gt;
+
+&lt;h3 id=&quot;placing-edge-loops&quot;&gt;Placing Edge Loops&lt;/h3&gt;
+&lt;p&gt;It’s time to build a model! If you already have a sculpt, you can use the sculpt as a base for how to shape edge loops. Otherwise, be prepared to tweak and adjust topology as you look at reference images.The key to a strong model is constant refinement using reference images in a variety of poses.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/foot_edge_loops.webp&quot; alt=&quot;Foot Edge Loops&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The first loops you’ll want to make are the green and yellow loops. These form the main topology in each axis that the rest of the model will connect to. Once those loops are in place, the blue loops help form the details like the ankle and toes.&lt;/p&gt;
+
+&lt;h3 id=&quot;loop-reductions---poles&quot;&gt;Loop Reductions &amp;amp;  Poles&lt;/h3&gt;
+&lt;p&gt;With all of the key edge loops placed, we need to work on reducing the number of loops coming fro mthe toe area towards the ankle. Reducing the number of loops is necessary so that we don’t end up with overly dense topology at the ankle and legs where such high density topology isn’t needed. Ideally, we want 16 or 24 loops at the top of the ankle so that the topology fits with the rest of a full character model.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/foot_poles.webp&quot; alt=&quot;Foot Edge Poles&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To do this, we can use &lt;a href=&quot;https://topologyguides.com/loop-reduction&quot;&gt; edge loop reduction flows&lt;/a&gt; to cut down the number of edge loops as we move away from the toes. As you can see from the image above, these transitions mainly take place on the flat surface area of the foot, rather than directly wear the toes attach. This is so that the edge poles resulting from the loop reductions lay on the flattest part of the model, rather than in a joint area where they could cause shading problems under deformation. The same can also be said of the the E-pole transition near the ankle.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/foot_topology.webp&quot; alt=&quot;Foot Topology&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;sketchfab-embed-wrapper&quot;&gt;
+    &lt;iframe title=&quot;A 3D model&quot; width=&quot;768&quot; height=&quot;420&quot; src=&quot;https://sketchfab.com/3d-models/foot-topology-study-4aa96c9b0a9b4cb1b3740f8e0558ffbc/embed?camera=0&amp;amp;ui_controls=1&amp;amp;ui_infos=1&amp;amp;ui_inspector=1&amp;amp;ui_stop=1&amp;amp;ui_watermark=1&amp;amp;ui_watermark_link=1&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; vr&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;
+And that wraps up this guide! Have any tips of your own? Leave them in the comments below! Also, If you enjoyed this post, please consider supporting the site by sharing it!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 28 Nov 2023 00:00:00 -0500</pubDate>
+        <link>http://topologyguides.com/human-foot</link>
+        <guid isPermaLink="true">http://topologyguides.com/human-foot</guid>
+        
+        <category>3d modeling</category>
+        
+        <category>organic</category>
+        
+        <category>topology</category>
+        
+        <category>3d</category>
+        
+        <category>blender</category>
+        
+        <category>b3d</category>
+        
+        <category>anatomy</category>
+        
+        
+      </item>
     
       <item>
         <title>Modeling with Animation in Mind</title>
@@ -64,8 +122,8 @@
 
 </description>
         <pubDate>Mon, 27 Dec 2021 00:52:58 -0500</pubDate>
-        <link>http://topologyguides.com//modeling-for-animation</link>
-        <guid isPermaLink="true">http://topologyguides.com//modeling-for-animation</guid>
+        <link>http://topologyguides.com/modeling-for-animation</link>
+        <guid isPermaLink="true">http://topologyguides.com/modeling-for-animation</guid>
         
         <category>3d modeling</category>
         
@@ -146,8 +204,8 @@
 &lt;p&gt;&lt;a href=&quot;https://www.patreon.com/bePatron?u=4389823&quot; data-patreon-widget-type=&quot;become-patron-button&quot;&gt;Become a Patron!&lt;/a&gt;&lt;script async=&quot;&quot; src=&quot;https://c6.patreon.com/becomePatronButton.bundle.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 14 Jun 2020 01:52:58 -0400</pubDate>
-        <link>http://topologyguides.com//human-hand</link>
-        <guid isPermaLink="true">http://topologyguides.com//human-hand</guid>
+        <link>http://topologyguides.com/human-hand</link>
+        <guid isPermaLink="true">http://topologyguides.com/human-hand</guid>
         
         <category>3d modeling</category>
         
@@ -193,8 +251,8 @@
 
 </description>
         <pubDate>Thu, 14 May 2020 16:52:58 -0400</pubDate>
-        <link>http://topologyguides.com//bevel-width-transitions</link>
-        <guid isPermaLink="true">http://topologyguides.com//bevel-width-transitions</guid>
+        <link>http://topologyguides.com/bevel-width-transitions</link>
+        <guid isPermaLink="true">http://topologyguides.com/bevel-width-transitions</guid>
         
         <category>3d modeling</category>
         
@@ -260,8 +318,8 @@
 &lt;p&gt;That’s all! I hope this short primer on edge poles has given you a better understanding of how to use them effectively. If this guide was useful to you, then please consider sharing it or contributing to the project’s &lt;a href=&quot;https://www.patreon.com/johnson&quot;&gt;Patreon page&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Mon, 02 Jul 2018 17:08:42 -0400</pubDate>
-        <link>http://topologyguides.com//manipulating-edge-poles</link>
-        <guid isPermaLink="true">http://topologyguides.com//manipulating-edge-poles</guid>
+        <link>http://topologyguides.com/manipulating-edge-poles</link>
+        <guid isPermaLink="true">http://topologyguides.com/manipulating-edge-poles</guid>
         
         <category>blender</category>
         
@@ -332,8 +390,8 @@ Depending on your software of choice, you might have a Matcap viewer available o
 &lt;a href=&quot;https://cgcookie.com/learn-blender&quot;&gt;&lt;figure class=&quot;tmblr-full&quot; data-orig-height=&quot;291&quot; data-orig-width=&quot;1496&quot;&gt;&lt;img src=&quot;assets/img/165094485335_5.png&quot; alt=&quot;image&quot; /&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 07 Sep 2017 18:31:31 -0400</pubDate>
-        <link>http://topologyguides.com//artifacts</link>
-        <guid isPermaLink="true">http://topologyguides.com//artifacts</guid>
+        <link>http://topologyguides.com/artifacts</link>
+        <guid isPermaLink="true">http://topologyguides.com/artifacts</guid>
         
         <category>blender</category>
         
@@ -379,8 +437,8 @@ Subdivided Result&lt;/p&gt;
 &lt;p&gt;Also, if you’re interested in supporting the content here on Topology Guides, please consider making a small donation &lt;a href=&quot;https://www.patreon.com/johnson&quot;&gt;to my Patreon page&lt;/a&gt; to help with the creation of new content!&lt;/p&gt;
 </description>
         <pubDate>Tue, 01 Aug 2017 12:05:18 -0400</pubDate>
-        <link>http://topologyguides.com//loop-reduction</link>
-        <guid isPermaLink="true">http://topologyguides.com//loop-reduction</guid>
+        <link>http://topologyguides.com/loop-reduction</link>
+        <guid isPermaLink="true">http://topologyguides.com/loop-reduction</guid>
         
         <category>blender</category>
         
@@ -492,8 +550,8 @@ Subdivided Result&lt;/p&gt;
 &lt;p&gt;Happy Modeling!&lt;/p&gt;
 </description>
         <pubDate>Mon, 17 Jul 2017 11:06:36 -0400</pubDate>
-        <link>http://topologyguides.com//decals</link>
-        <guid isPermaLink="true">http://topologyguides.com//decals</guid>
+        <link>http://topologyguides.com/decals</link>
+        <guid isPermaLink="true">http://topologyguides.com/decals</guid>
         
         <category>b3d</category>
         
@@ -545,8 +603,8 @@ Subdivided Result&lt;/p&gt;
 &lt;p&gt;That’s it!&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Mar 2017 08:53:43 -0500</pubDate>
-        <link>http://topologyguides.com//creating-chamfered-cuts</link>
-        <guid isPermaLink="true">http://topologyguides.com//creating-chamfered-cuts</guid>
+        <link>http://topologyguides.com/creating-chamfered-cuts</link>
+        <guid isPermaLink="true">http://topologyguides.com/creating-chamfered-cuts</guid>
         
         <category>topology</category>
         
@@ -596,66 +654,14 @@ Subdivided Result&lt;/p&gt;
 &lt;p&gt;That’s it! See you in the next guide!&lt;/p&gt;
 </description>
         <pubDate>Sun, 15 Jan 2017 18:19:16 -0500</pubDate>
-        <link>http://topologyguides.com//creating-chamfered-circle</link>
-        <guid isPermaLink="true">http://topologyguides.com//creating-chamfered-circle</guid>
+        <link>http://topologyguides.com/creating-chamfered-circle</link>
+        <guid isPermaLink="true">http://topologyguides.com/creating-chamfered-circle</guid>
         
         <category>blender</category>
         
         <category>3D Modelling</category>
         
         <category>topology</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Modeling Grip Ridges</title>
-        <description>&lt;p&gt;This shape is pretty simple. but a useful one if your modeling mechanical or sci-fi things with grips or ridges. So let’s get to it!&lt;/p&gt;
-
-&lt;h2 id=&quot;1&quot;&gt;1.&lt;/h2&gt;
-
-&lt;p&gt;Start by modeling the curved edge you need to incorporate the ridges into. I recommend modeling separate to your main model so that you can tile it later and then add it back in.&lt;/p&gt;
-
-&lt;h2 id=&quot;2&quot;&gt;2.&lt;/h2&gt;
-
-&lt;p&gt;Add two loops to define the inset and outset parts. If you want the inset and outset ridges to be the same width, then make sure the middle section is the same width as the two outer sections combined.&lt;/p&gt;
-
-&lt;h2 id=&quot;3&quot;&gt;3.&lt;/h2&gt;
-
-&lt;p&gt;Cut out the area you’d like to be inset.&lt;/p&gt;
-
-&lt;h2 id=&quot;4&quot;&gt;4.&lt;/h2&gt;
-
-&lt;p&gt;Add a quad to the first four vertices along what will be the wall of the inset. Make sure to model this quad to be properly aligned how you&lt;/p&gt;
-
-&lt;p&gt;like it, as the rest of the inset will be based upon this quad.&lt;/p&gt;
-
-&lt;h2 id=&quot;5&quot;&gt;5.&lt;/h2&gt;
-
-&lt;p&gt;Fill in the rest of the inset using the fill tool (F key), or using the &lt;a href=&quot;http://lesterbanks.com/2013/01/extending-blenders-modeling-capabilities-with-the-f2-addon-for-blender/&quot;&gt;F2 add-on&lt;/a&gt; for Blender to make it even quicker.&lt;/p&gt;
-
-&lt;h2 id=&quot;6&quot;&gt;6.&lt;/h2&gt;
-
-&lt;p&gt;Add holding edges or mean creases to hold the shape, then apply sub-surf. At this point, you can easily tile the ridges using an array and reintegrate it into your mesh.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/img/153741336695_0.png&quot; alt=&quot;image&quot; /&gt;
-See the final result on Sketchfab:&lt;/p&gt;
-</description>
-        <pubDate>Sun, 27 Nov 2016 14:52:47 -0500</pubDate>
-        <link>http://topologyguides.com//modeling-grip-ridges</link>
-        <guid isPermaLink="true">http://topologyguides.com//modeling-grip-ridges</guid>
-        
-        <category>3d modeling</category>
-        
-        <category>blender</category>
-        
-        <category>guide</category>
-        
-        <category>sub-d</category>
-        
-        <category>topology</category>
-        
-        <category>tutorial</category>
         
         
       </item>
