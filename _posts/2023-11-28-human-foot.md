@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Modeling a Human Foot
-date: '2023-11-25T01:52:58-04:00'
+date: '2023-11-28T01:00:00-04:00'
 tags:
 - 3d modeling
 - organic
