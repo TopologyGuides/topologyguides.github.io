@@ -1,7 +1,7 @@
 # Base blog settings
 
                               # set to '' in case of hosting on GitHub
-url                          : 'http://topologyguides.com/' # the base hostname & protocol for your site
+url                          : 'http://topologyguides.com' # the base hostname & protocol for your site
                                   # `http://<username>.github.io` - for GitHub
 safe                         : false
 blog:
