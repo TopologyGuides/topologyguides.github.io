@@ -20,12 +20,12 @@ For those curious, the site is built entirely using markdown on the Jekyll blogg
 
 The site previously was a Tumble blog and briefly moved to Wordpress install before I realized Wordpress was terrible at being efficient and not worth the cost of investment.
 
+## Donate
+Want to help support the project? [Buy me a coffee!](https://www.paypal.com/donate/?hosted_button_id=UECKTHYBPVNWY)
 
 ## Translation help
-Interested in helping translate the site into other languages? Reach out to me at [johnsonmartin.contact@gmail.com](mailto:johnsonmartin.contact@gmail.com) to learn how you can help.
-
+Interested in helping translate the site into other languages? Reach out to me at [contact@johnsonlm.com](mailto:contact@johnsonlm.com) to learn how you can help.
 
 ## Contact Me
-Need to get in touch with me, or just chat? Email me at [johnsonmartin.contact@gmail.com](mailto:johnsonmartin.contact@gmail.com). I will respond within a day or two.
-
+Need to get in touch with me, or just chat? Email me at [contact@johnsonlm.com](mailto:contact@johnsonlm.com). I will generally respond within a day or two.
 </div>
